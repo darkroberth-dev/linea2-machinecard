@@ -1,0 +1,326 @@
+{
+  "custom": {},
+  "params": {
+    "iconInstances": [
+      {
+        "iconPath": "ignition/dashboard",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      },
+      {
+        "iconPath": "material/schedule",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      },
+      {
+        "iconPath": "material/storage",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      },
+      {
+        "iconPath": "material/forum",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      },
+      {
+        "iconPath": "material/bar_chart",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      },
+      {
+        "iconPath": "material/description",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      },
+      {
+        "iconPath": "material/notifications_none",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      },
+      {
+        "iconPath": "material/logout",
+        "instancePosition": {
+          "basis": "48px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "instanceStyle": {},
+        "navigatePath": "/"
+      }
+    ]
+  },
+  "propConfig": {
+    "params.iconInstances": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "width": 70
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "FlexRepeater"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.instances": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.iconInstances"
+              },
+              "enabled": true,
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "alignItems": "center",
+          "direction": "column",
+          "elementPosition": {
+            "basis": "48px",
+            "grow": 0,
+            "shrink": 0
+          },
+          "path": "Elements/Sidebar/menuIcon",
+          "style": {
+            "overflow": "hidden"
+          },
+          "useDefaultViewHeight": false,
+          "useDefaultViewWidth": false
+        },
+        "type": "ia.display.flex-repeater"
+      },
+      {
+        "meta": {
+          "name": "SideSpacer"
+        },
+        "position": {
+          "basis": "0px",
+          "grow": 1
+        },
+        "props": {
+          "direction": "column"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tself.session.custom.darkMode = not bool(self.session.custom.darkMode)\n"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "ThemeToggle"
+        },
+        "position": {
+          "basis": "36px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.path": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"material/light_mode\", \"material/dark_mode\")"
+              }
+            }
+          },
+          "props.color": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+              }
+            }
+          },
+          "props.style.backgroundColor": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+              }
+            }
+          },
+          "props.style.border": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+              }
+            }
+          }
+        },
+        "props": {
+          "path": "material/dark_mode",
+          "color": "#5c6b7a",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "border": "1px solid #e6ebef",
+            "borderRadius": "10px",
+            "classes": "lift",
+            "height": "28px",
+            "marginBottom": "8px",
+            "padding": "4px",
+            "width": "28px"
+          }
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tpopup.notification.info(\"Máquina\", \"Configuración\", \"info\")\n"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "SideSettings"
+        },
+        "position": {
+          "basis": "32px",
+          "shrink": 0
+        },
+        "props": {
+          "color": "#5c6b7a",
+          "path": "material/settings",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "border": "1px solid #e6ebef",
+            "borderRadius": "10px",
+            "classes": "lift",
+            "height": "28px",
+            "marginLeft": "6px",
+            "padding": "4px",
+            "width": "28px"
+          }
+        },
+        "type": "ia.display.icon",
+        "propConfig": {
+          "props.color": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"#b7c0ca\", \"#5c6b7a\")"
+              }
+            }
+          },
+          "props.style.backgroundColor": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+              }
+            }
+          },
+          "props.style.border": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "events": {
+      "dom": {
+        "onMouseLeave": {
+          "config": {
+            "script": "\tself.session.custom.menuOpen = False\n"
+          },
+          "scope": "G",
+          "type": "script"
+        }
+      }
+    },
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "alignItems": "center",
+      "direction": "column",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "borderRight": "1px solid #e6ebef",
+        "height": "100%",
+        "paddingBottom": "8px",
+        "paddingTop": "8px",
+        "width": "64px"
+      }
+    },
+    "type": "ia.container.flex",
+    "propConfig": {
+      "props.style.backgroundColor": {
+        "binding": {
+          "type": "expr",
+          "config": {
+            "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+          }
+        }
+      },
+      "props.style.borderRight": {
+        "binding": {
+          "type": "expr",
+          "config": {
+            "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+          }
+        }
+      }
+    }
+  }
+}

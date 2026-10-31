@@ -1,0 +1,585 @@
+{
+  "custom": {},
+  "params": {
+    "header": "SUCCESS",
+    "text": "HECHO",
+    "timeout": 0,
+    "type": "success"
+  },
+  "propConfig": {
+    "params.header": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.text": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.timeout": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.type": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 78,
+      "width": 429
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "FlexContainer_1"
+            },
+            "position": {
+              "basis": "2%",
+              "grow": 1
+            },
+            "propConfig": {
+              "props.style.backgroundColor": {
+                "binding": {
+                  "config": {
+                    "path": "view.params.type"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "#000000",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": "info",
+                          "output": "#3B82F6"
+                        },
+                        {
+                          "input": "success",
+                          "output": "#22c55e"
+                        },
+                        {
+                          "input": "danger",
+                          "output": "#EF4444"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "20%"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "overflow": "hidden"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Icon"
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "path": "view.params.type"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#000000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": "info",
+                                  "output": "#3B82F6"
+                                },
+                                {
+                                  "input": "success",
+                                  "output": "#22C55E"
+                                },
+                                {
+                                  "input": "danger",
+                                  "output": "#EF4444"
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "property"
+                        }
+                      },
+                      "props.path": {
+                        "binding": {
+                          "config": {
+                            "path": "view.params.type"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": null,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": "info",
+                                  "output": "ignition/info_circle"
+                                },
+                                {
+                                  "input": "success",
+                                  "output": "ignition/check_circle"
+                                },
+                                {
+                                  "input": "danger",
+                                  "output": "ignition/warning_info"
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "property"
+                        }
+                      },
+                      "props.style.color": {
+                        "binding": {
+                          "config": {
+                            "path": "this.props.color"
+                          },
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "overflow": "auto"
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_1"
+                },
+                "position": {
+                  "basis": "25%",
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "20%"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "overflow": "hidden"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "15%",
+              "grow": 1
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "bidirectional": true,
+                            "path": "view.params.header"
+                          },
+                          "type": "property"
+                        }
+                      },
+                      "props.textStyle.color": {
+                        "binding": {
+                          "config": {
+                            "path": "view.params.type"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#000000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": "info",
+                                  "output": "#1D4ED8"
+                                },
+                                {
+                                  "input": "success",
+                                  "output": "#064E3B"
+                                },
+                                {
+                                  "input": "danger",
+                                  "output": "#B91C1C"
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "props": {
+                      "alignVertical": "bottom",
+                      "style": {
+                        "marginBottom": "2px"
+                      },
+                      "textStyle": {
+                        "fontFamily": "Roboto",
+                        "fontSize": "1.8vh",
+                        "fontWeight": "bold",
+                        "textAlign": "left"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "50%",
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "path": "view.params.text"
+                          },
+                          "type": "property"
+                        }
+                      },
+                      "props.textStyle.color": {
+                        "binding": {
+                          "config": {
+                            "path": "view.params.type"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#000000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": "info",
+                                  "output": "#475569"
+                                },
+                                {
+                                  "input": "success",
+                                  "output": "#065F46"
+                                },
+                                {
+                                  "input": "danger",
+                                  "output": "#475569"
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "overflow": "hidden"
+                      },
+                      "textStyle": {
+                        "fontFamily": "Roboto",
+                        "fontSize": "1.6vh",
+                        "textAlign": "left"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "50%",
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_2"
+            },
+            "position": {
+              "basis": "80%",
+              "grow": 1
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "events": {
+                      "dom": {
+                        "onClick": {
+                          "config": {
+                            "script": "\tsystem.perspective.closePopup(\"popupBanner\")"
+                          },
+                          "scope": "G",
+                          "type": "script"
+                        }
+                      }
+                    },
+                    "meta": {
+                      "name": "Icon"
+                    },
+                    "props": {
+                      "path": "ignition/close"
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "40%",
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "FlexContainer_2"
+                },
+                "position": {
+                  "basis": "60%",
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "overflow": "hidden"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "8%",
+              "grow": 1
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "grow": 1
+        },
+        "propConfig": {
+          "custom.textColor": {
+            "binding": {
+              "config": {
+                "path": "view.params.type"
+              },
+              "transforms": [
+                {
+                  "fallback": "#000000",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": "success",
+                      "output": "#15803d"
+                    },
+                    {
+                      "input": "info",
+                      "output": "#1e40af"
+                    },
+                    {
+                      "input": "danger",
+                      "output": "#b91c1c"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.style.backgroundColor": {
+            "binding": {
+              "config": {
+                "path": "view.params.type"
+              },
+              "transforms": [
+                {
+                  "fallback": "#D5D5D5",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": "info",
+                      "output": "#eff6ff"
+                    },
+                    {
+                      "input": "success",
+                      "output": "#f0fdf4"
+                    },
+                    {
+                      "input": "danger",
+                      "output": "#FEF2F2"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "borderBottomLeftRadius": "12px",
+            "borderBottomRightRadius": "12px",
+            "borderTopLeftRadius": "12px",
+            "borderTopRightRadius": "12px",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "custom": {
+      "closeAt": {
+        "$": [
+          "ts",
+          192,
+          1791832097362
+        ],
+        "$ts": 1791832097362
+      },
+      "timerEnabled": true
+    },
+    "events": {
+      "system": {
+        "onStartup": {
+          "config": {
+            "script": "\tself.custom.closeAt \u003d system.date.addSeconds(system.date.now(), self.view.params.timeout)\n\tself.custom.timerEnabled \u003d True\n\t"
+          },
+          "scope": "G",
+          "type": "script"
+        }
+      }
+    },
+    "meta": {
+      "name": "root"
+    },
+    "propConfig": {
+      "custom.currentTime": {
+        "binding": {
+          "config": {
+            "expression": "now()"
+          },
+          "type": "expr"
+        },
+        "onChange": {
+          "enabled": null,
+          "script": "\timport time\n\tif self.view.params.timeout \u003e 0:\n\t\tif currentValue.value \u003e\u003d self.custom.closeAt:\n\t\t\tself.custom.timerEnabled \u003d False\n\t\t\tself.props.style.classes \u003d \"popupOut\"\n\t\t\ttime.sleep(0.3)\n\t\t\tsystem.perspective.closePopup(\"popupBanner\")"
+        }
+      }
+    },
+    "props": {
+      "style": {
+        "classes": "popupIn",
+        "maxWidth": "800px",
+        "minWidth": "200px",
+        "overflow": "hidden"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

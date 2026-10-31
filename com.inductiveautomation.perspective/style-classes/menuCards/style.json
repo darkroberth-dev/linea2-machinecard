@@ -1,0 +1,22 @@
+{
+  "base": {
+    "style": {
+      "backgroundColor": "#0C7BB3",
+      "backgroundPosition": "center",
+      "backgroundSize": "30%",
+      "borderTopLeftRadius": "7%",
+      "borderTopRightRadius": "7%",
+      "borderBottomLeftRadius": "7%",
+      "borderBottomRightRadius": "7%"
+    }
+  },
+  "variants": [
+    {
+      "pseudo": "hover",
+      "style": {
+        "backgroundSize": "35%",
+        "cursor": "pointer"
+      }
+    }
+  ]
+}

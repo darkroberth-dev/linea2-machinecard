@@ -1,0 +1,15 @@
+{
+  "base": {
+    "style": {}
+  },
+  "variants": [
+    {
+      "pseudo": "disabled",
+      "style": {
+        "backgroundColor": "#D5D5D53B",
+        "color": "#000000",
+        "cursor": "auto"
+      }
+    }
+  ]
+}
