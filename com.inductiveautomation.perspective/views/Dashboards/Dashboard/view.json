@@ -54,7 +54,7 @@
                 },
                 "props": {
                   "style": {
-                    "color": "#1b2430",
+                    "color": "#f2f4f7",
                     "fontSize": "22px",
                     "fontWeight": "800",
                     "paddingLeft": "4px",
@@ -75,7 +75,7 @@
                 "props": {
                   "direction": "column",
                   "style": {
-                    "backgroundColor": "#d5dde3",
+                    "backgroundColor": "#343a44",
                     "height": "28px",
                     "width": "1px"
                   }
@@ -91,7 +91,7 @@
                 },
                 "props": {
                   "style": {
-                    "color": "#1b2430",
+                    "color": "#b7c0ca",
                     "fontSize": "16px",
                     "fontWeight": "600",
                     "marginLeft": "16px"
@@ -109,11 +109,11 @@
                 },
                 "props": {
                   "style": {
-                    "color": "#1b9a52",
+                    "color": "#b7c0ca",
                     "fontSize": "10px",
                     "marginLeft": "10px"
                   },
-                  "text": "●"
+                  "text": "•"
                 },
                 "type": "ia.display.label"
               },
@@ -136,7 +136,7 @@
                 },
                 "props": {
                   "style": {
-                    "color": "#1b2430",
+                    "color": "#b7c0ca",
                     "fontSize": "14px",
                     "fontWeight": "600",
                     "marginLeft": "6px"
@@ -197,8 +197,8 @@
                   "alignItems": "center",
                   "justify": "center",
                   "style": {
-                    "backgroundColor": "#ffffff",
-                    "border": "1px solid #e6ebef",
+                    "backgroundColor": "#262b33",
+                    "border": "1px solid #343a44",
                     "borderRadius": "12px",
                     "classes": "lift",
                     "height": "40px",
@@ -251,8 +251,8 @@
                   "alignItems": "center",
                   "justify": "center",
                   "style": {
-                    "backgroundColor": "#ffffff",
-                    "border": "1px solid #e6ebef",
+                    "backgroundColor": "#262b33",
+                    "border": "1px solid #343a44",
                     "borderRadius": "12px",
                     "classes": "lift",
                     "height": "40px",
@@ -291,7 +291,7 @@
                     },
                     "props": {
                       "style": {
-                        "color": "#1b2430",
+                        "color": "#f2f4f7",
                         "fontSize": "13px",
                         "fontWeight": "700",
                         "marginLeft": "6px"
@@ -323,8 +323,8 @@
                   "alignItems": "center",
                   "justify": "center",
                   "style": {
-                    "backgroundColor": "#ffffff",
-                    "border": "1px solid #e6ebef",
+                    "backgroundColor": "#262b33",
+                    "border": "1px solid #343a44",
                     "borderRadius": "12px",
                     "classes": "lift",
                     "height": "40px",
@@ -396,8 +396,8 @@
                   "alignItems": "center",
                   "justify": "center",
                   "style": {
-                    "backgroundColor": "#ffffff",
-                    "border": "1px solid #e6ebef",
+                    "backgroundColor": "#262b33",
+                    "border": "1px solid #343a44",
                     "borderRadius": "12px",
                     "classes": "lift",
                     "height": "40px",
@@ -449,7 +449,7 @@
                   "alignItems": "center",
                   "justify": "center",
                   "style": {
-                    "backgroundColor": "#1b2430",
+                    "backgroundColor": "#3a4250",
                     "borderRadius": "999px",
                     "classes": "lift",
                     "height": "36px",
@@ -470,8 +470,8 @@
             "props": {
               "alignItems": "center",
               "style": {
-                "backgroundColor": "#ffffff",
-                "borderBottom": "1px solid #e6ebef",
+                "backgroundColor": "#1b1f26",
+                "borderBottom": "1px solid #343a44",
                 "margin": "0 -12px 12px -12px",
                 "padding": "0 12px"
               }
@@ -487,14 +487,15 @@
                       "name": "Sidebar"
                     },
                     "position": {
-                      "shrink": 0
+                      "shrink": 0,
+                      "display": false
                     },
                     "props": {
                       "path": "Components/Banners/leftSidebar/leftSidebar",
                       "style": {
                         "height": "100%",
                         "overflow": "hidden",
-                        "width": "65px"
+                        "width": "0px"
                       }
                     },
                     "type": "ia.display.view"
@@ -539,12 +540,12 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#0f8c98",
+                                "color": "#7eb6ef",
                                 "fontSize": "26px",
                                 "fontWeight": "700",
                                 "marginRight": "10px"
                               },
-                              "text": "5"
+                              "text": "1"
                             },
                             "type": "ia.display.label"
                           },
@@ -557,11 +558,11 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#0f8c98",
+                                "color": "#7eb6ef",
                                 "fontSize": "11px",
                                 "fontWeight": "700"
                               },
-                              "text": "PZ/MIN"
+                              "text": "LÍNEAS"
                             },
                             "type": "ia.display.label"
                           }
@@ -578,12 +579,14 @@
                           "alignItems": "flex-start",
                           "direction": "column",
                           "style": {
-                            "backgroundColor": "#dff5f6",
-                            "borderRadius": "16px",
+                            "backgroundColor": "#262b33",
+                            "borderRadius": "14px",
                             "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
                             "marginRight": "8px",
                             "minHeight": "72px",
-                            "padding": "12px 14px"
+                            "padding": "12px 14px",
+                            "boxShadow": "none",
+                            "border": "1px solid #343a44"
                           }
                         },
                         "type": "ia.container.flex"
@@ -599,12 +602,12 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#1b9a52",
+                                "color": "#3dbe6e",
                                 "fontSize": "26px",
                                 "fontWeight": "700",
                                 "marginRight": "10px"
                               },
-                              "text": "19482"
+                              "text": "1"
                             },
                             "type": "ia.display.label"
                           },
@@ -617,11 +620,11 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#1b9a52",
+                                "color": "#3dbe6e",
                                 "fontSize": "11px",
                                 "fontWeight": "700"
                               },
-                              "text": "T1 HOY"
+                              "text": "PRODUCIENDO"
                             },
                             "type": "ia.display.label"
                           }
@@ -638,12 +641,14 @@
                           "alignItems": "flex-start",
                           "direction": "column",
                           "style": {
-                            "backgroundColor": "#e5f6ec",
-                            "borderRadius": "16px",
+                            "backgroundColor": "#262b33",
+                            "borderRadius": "14px",
                             "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
                             "marginRight": "8px",
                             "minHeight": "72px",
-                            "padding": "12px 14px"
+                            "padding": "12px 14px",
+                            "boxShadow": "none",
+                            "border": "1px solid #343a44"
                           }
                         },
                         "type": "ia.container.flex"
@@ -659,12 +664,12 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#9a7b12",
+                                "color": "#e0c15a",
                                 "fontSize": "26px",
                                 "fontWeight": "700",
                                 "marginRight": "10px"
                               },
-                              "text": "9819"
+                              "text": "0"
                             },
                             "type": "ia.display.label"
                           },
@@ -677,11 +682,11 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#9a7b12",
+                                "color": "#e0c15a",
                                 "fontSize": "11px",
                                 "fontWeight": "700"
                               },
-                              "text": "T2 HOY"
+                              "text": "DETENIDO"
                             },
                             "type": "ia.display.label"
                           }
@@ -699,12 +704,14 @@
                           "direction": "column",
                           "path": "Components/Cards/buttonCard",
                           "style": {
-                            "backgroundColor": "#faf4d6",
-                            "borderRadius": "16px",
+                            "backgroundColor": "#262b33",
+                            "borderRadius": "14px",
                             "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
                             "marginRight": "8px",
                             "minHeight": "72px",
-                            "padding": "12px 14px"
+                            "padding": "12px 14px",
+                            "boxShadow": "none",
+                            "border": "1px solid #343a44"
                           }
                         },
                         "type": "ia.container.flex"
@@ -720,7 +727,7 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#d23b3b",
+                                "color": "#e15d5d",
                                 "fontSize": "26px",
                                 "fontWeight": "700",
                                 "marginRight": "10px"
@@ -738,11 +745,11 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#d23b3b",
+                                "color": "#e15d5d",
                                 "fontSize": "11px",
                                 "fontWeight": "700"
                               },
-                              "text": "PARO ACTIVO"
+                              "text": "ALERTA"
                             },
                             "type": "ia.display.label"
                           }
@@ -759,12 +766,14 @@
                           "alignItems": "flex-start",
                           "direction": "column",
                           "style": {
-                            "backgroundColor": "#fdecec",
-                            "borderRadius": "16px",
+                            "backgroundColor": "#262b33",
+                            "borderRadius": "14px",
                             "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
                             "marginRight": "8px",
                             "minHeight": "72px",
-                            "padding": "12px 14px"
+                            "padding": "12px 14px",
+                            "boxShadow": "none",
+                            "border": "1px solid #343a44"
                           }
                         },
                         "type": "ia.container.flex"
@@ -780,12 +789,12 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#66717c",
+                                "color": "#c5ccd4",
                                 "fontSize": "26px",
                                 "fontWeight": "700",
                                 "marginRight": "10px"
                               },
-                              "text": "5"
+                              "text": "0"
                             },
                             "type": "ia.display.label"
                           },
@@ -798,11 +807,11 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#66717c",
+                                "color": "#c5ccd4",
                                 "fontSize": "11px",
                                 "fontWeight": "700"
                               },
-                              "text": "QUEMADORES"
+                              "text": "SIN DATOS"
                             },
                             "type": "ia.display.label"
                           }
@@ -819,12 +828,14 @@
                           "alignItems": "flex-start",
                           "direction": "column",
                           "style": {
-                            "backgroundColor": "#eef1f4",
-                            "borderRadius": "16px",
+                            "backgroundColor": "#262b33",
+                            "borderRadius": "14px",
                             "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
                             "marginRight": "8px",
                             "minHeight": "72px",
-                            "padding": "12px 14px"
+                            "padding": "12px 14px",
+                            "boxShadow": "none",
+                            "border": "1px solid #343a44"
                           }
                         },
                         "type": "ia.container.flex"
@@ -840,12 +851,12 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#3b6fd8",
+                                "color": "#7aa0e8",
                                 "fontSize": "26px",
                                 "fontWeight": "700",
                                 "marginRight": "10px"
                               },
-                              "text": "RUN"
+                              "text": "0"
                             },
                             "type": "ia.display.label"
                           },
@@ -858,11 +869,11 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#3b6fd8",
+                                "color": "#7aa0e8",
                                 "fontSize": "11px",
                                 "fontWeight": "700"
                               },
-                              "text": "ESTADO"
+                              "text": "FUERA DE TURNO"
                             },
                             "type": "ia.display.label"
                           }
@@ -879,12 +890,14 @@
                           "alignItems": "flex-start",
                           "direction": "column",
                           "style": {
-                            "backgroundColor": "#e7eefb",
-                            "borderRadius": "16px",
+                            "backgroundColor": "#262b33",
+                            "borderRadius": "14px",
                             "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
                             "marginRight": "8px",
                             "minHeight": "72px",
-                            "padding": "12px 14px"
+                            "padding": "12px 14px",
+                            "boxShadow": "none",
+                            "border": "1px solid #343a44"
                           }
                         },
                         "type": "ia.container.flex"
@@ -937,7 +950,7 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#1b2430",
+                                "color": "#f2f4f7",
                                 "fontSize": "13px",
                                 "fontWeight": "600"
                               },
@@ -966,8 +979,8 @@
                         "props": {
                           "alignItems": "center",
                           "style": {
-                            "backgroundColor": "#ffffff",
-                            "border": "1px solid #e6ebef",
+                            "backgroundColor": "#262b33",
+                            "border": "1px solid #343a44",
                             "borderRadius": "12px",
                             "classes": "lift",
                             "marginLeft": "8px",
@@ -1006,7 +1019,7 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#1b2430",
+                                "color": "#f2f4f7",
                                 "fontSize": "13px",
                                 "fontWeight": "600"
                               },
@@ -1035,8 +1048,8 @@
                         "props": {
                           "alignItems": "center",
                           "style": {
-                            "backgroundColor": "#ffffff",
-                            "border": "1px solid #e6ebef",
+                            "backgroundColor": "#262b33",
+                            "border": "1px solid #343a44",
                             "borderRadius": "12px",
                             "classes": "lift",
                             "marginLeft": "8px",
@@ -1085,7 +1098,7 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#1b2430",
+                                "color": "#f2f4f7",
                                 "fontSize": "13px",
                                 "fontWeight": "600"
                               },
@@ -1114,8 +1127,8 @@
                         "props": {
                           "alignItems": "center",
                           "style": {
-                            "backgroundColor": "#ffffff",
-                            "border": "1px solid #e6ebef",
+                            "backgroundColor": "#262b33",
+                            "border": "1px solid #343a44",
                             "borderRadius": "12px",
                             "classes": "lift",
                             "marginLeft": "8px",
@@ -1154,11 +1167,11 @@
                             },
                             "props": {
                               "style": {
-                                "color": "#1b2430",
+                                "color": "#f2f4f7",
                                 "fontSize": "13px",
                                 "fontWeight": "600"
                               },
-                              "text": "Tour Rápido"
+                              "text": "Día (24H)"
                             },
                             "type": "ia.display.label"
                           }
@@ -1178,14 +1191,14 @@
                           "name": "Tour"
                         },
                         "position": {
-                          "display": false,
+                          "display": true,
                           "shrink": 0
                         },
                         "props": {
                           "alignItems": "center",
                           "style": {
-                            "backgroundColor": "#ffffff",
-                            "border": "1px solid #e6ebef",
+                            "backgroundColor": "#262b33",
+                            "border": "1px solid #343a44",
                             "borderRadius": "12px",
                             "classes": "lift",
                             "marginLeft": "8px",
@@ -1225,8 +1238,8 @@
                       "direction": "column",
                       "style": {
                         "height": "100%",
-                        "overflow": "hidden",
-                        "width": "100%"
+                        "width": "100%",
+                        "overflow": "hidden"
                       }
                     },
                     "children": [
@@ -1236,73 +1249,17 @@
                         },
                         "type": "ia.display.view",
                         "position": {
-                          "basis": "340px",
-                          "grow": 0,
-                          "shrink": 0
+                          "grow": 1,
+                          "shrink": 1,
+                          "basis": "0px"
                         },
                         "props": {
                           "path": "Components/Cards/MachineCard",
                           "style": {
-                            "width": "100%"
-                          }
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "BottomRow"
-                        },
-                        "type": "ia.container.flex",
-                        "position": {
-                          "basis": "0px",
-                          "grow": 1,
-                          "shrink": 1
-                        },
-                        "props": {
-                          "style": {
-                            "gap": "12px",
-                            "marginTop": "12px",
                             "height": "100%",
                             "width": "100%"
                           }
-                        },
-                        "children": [
-                          {
-                            "meta": {
-                              "name": "Piezas"
-                            },
-                            "type": "ia.display.view",
-                            "position": {
-                              "basis": "0px",
-                              "grow": 1,
-                              "shrink": 1
-                            },
-                            "props": {
-                              "path": "Components/Cards/PiezasDia",
-                              "style": {
-                                "height": "100%",
-                                "width": "100%"
-                              }
-                            }
-                          },
-                          {
-                            "meta": {
-                              "name": "Paros"
-                            },
-                            "type": "ia.display.view",
-                            "position": {
-                              "basis": "0px",
-                              "grow": 1,
-                              "shrink": 1
-                            },
-                            "props": {
-                              "path": "Components/Cards/ParosDia",
-                              "style": {
-                                "height": "100%",
-                                "width": "100%"
-                              }
-                            }
-                          }
-                        ]
+                        }
                       }
                     ]
                   }
@@ -1339,7 +1296,7 @@
         "props": {
           "direction": "column",
           "style": {
-            "backgroundColor": "#f3f6f7",
+            "backgroundColor": "#1b1f26",
             "height": "100%",
             "overflow": "hidden",
             "padding": "0 12px 12px 12px"
@@ -1358,7 +1315,7 @@
     },
     "props": {
       "style": {
-        "backgroundColor": "#f3f6f7",
+        "backgroundColor": "#1b1f26",
         "height": "100%",
         "overflow": "hidden",
         "padding": "0px"
