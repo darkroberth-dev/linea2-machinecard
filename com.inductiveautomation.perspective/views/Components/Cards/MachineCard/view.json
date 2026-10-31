@@ -511,14 +511,6 @@
                   }
                 }
               },
-              "props.style.borderBottom": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "none"
-                  }
-                }
-              },
               "props.style.borderRadius": {
                 "binding": {
                   "type": "expr",
@@ -532,14 +524,6 @@
                   "type": "expr",
                   "config": {
                     "expression": "if({session.custom.darkMode}, \"8px 10px 0px 10px\", \"0px\")"
-                  }
-                }
-              },
-              "props.style.borderTop": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "none"
                   }
                 }
               }
@@ -583,7 +567,7 @@
                         "binding": {
                           "type": "expr",
                           "config": {
-                            "expression": "if({session.custom.darkMode}, \"none\", \"1px solid #e4e9ee\")"
+                            "expression": "if({session.custom.darkMode}, \"1px solid rgba(255,255,255,0.22)\", \"1px solid #e4e9ee\")"
                           }
                         }
                       }
@@ -595,11 +579,10 @@
                         "shrink": 1
                       },
                       "elementStyle": {
-                        "borderRight": "none",
-                        "marginBottom": "0px",
-                        "marginLeft": "0px",
-                        "marginTop": "0px",
-                        "minWidth": "0px"
+                        "margin": "0px",
+                        "minWidth": "0px",
+                        "overflow": "hidden",
+                        "padding": "0 2px"
                       },
                       "path": "Components/Cards/Metric",
                       "useDefaultViewHeight": false,
@@ -743,14 +726,6 @@
                   }
                 }
               },
-              "props.style.borderBottom": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "none"
-                  }
-                }
-              },
               "props.style.borderRadius": {
                 "binding": {
                   "type": "expr",
@@ -764,14 +739,6 @@
                   "type": "expr",
                   "config": {
                     "expression": "if({session.custom.darkMode}, \"8px 10px 0px 10px\", \"0px\")"
-                  }
-                }
-              },
-              "props.style.borderTop": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "none"
                   }
                 }
               }
@@ -1300,14 +1267,6 @@
                   }
                 }
               },
-              "props.style.borderBottom": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "none"
-                  }
-                }
-              },
               "props.style.borderRadius": {
                 "binding": {
                   "type": "expr",
@@ -1321,14 +1280,6 @@
                   "type": "expr",
                   "config": {
                     "expression": "if({session.custom.darkMode}, \"8px 10px 0px 10px\", \"0px\")"
-                  }
-                }
-              },
-              "props.style.borderTop": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "none"
                   }
                 }
               }

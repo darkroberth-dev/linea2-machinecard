@@ -1653,7 +1653,7 @@
                       "alignContent": "flex-start",
                       "direction": "column",
                       "elementPosition": {
-                        "basis": "310px",
+                        "basis": "360px",
                         "grow": 0,
                         "shrink": 0
                       },
@@ -1843,7 +1843,7 @@
                           ],
                           "headerBg": "#fff6d8",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -2087,7 +2087,7 @@
                           ],
                           "headerBg": "#e7f7ef",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -2252,7 +2252,7 @@
                           ],
                           "headerBg": "#e7f7ef",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -2437,7 +2437,7 @@
                           ],
                           "headerBg": "#e7f7ef",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -2622,7 +2622,7 @@
                           ],
                           "headerBg": "#e7f7ef",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -2807,7 +2807,7 @@
                           ],
                           "headerBg": "#e7f7ef",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -2992,7 +2992,7 @@
                           ],
                           "headerBg": "#e7f7ef",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -3177,7 +3177,7 @@
                           ],
                           "headerBg": "#fff6d8",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -3356,7 +3356,7 @@
                           ],
                           "headerBg": "#eef1f4",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -3541,7 +3541,7 @@
                           ],
                           "headerBg": "#fff6d8",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -3726,7 +3726,7 @@
                           ],
                           "headerBg": "#fff6d8",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -3911,7 +3911,7 @@
                           ],
                           "headerBg": "#fff6d8",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -4096,7 +4096,7 @@
                           ],
                           "headerBg": "#fff6d8",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
@@ -4281,7 +4281,7 @@
                           ],
                           "headerBg": "#fff6d8",
                           "instancePosition": {
-                            "basis": "310px",
+                            "basis": "360px",
                             "grow": 0,
                             "shrink": 0
                           },
