@@ -1,0 +1,8 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": ["view.json"],
+  "attributes": {"lastModification": {"actor": "Roberto", "timestamp": "2026-10-31T00:40:00Z"}}
+}

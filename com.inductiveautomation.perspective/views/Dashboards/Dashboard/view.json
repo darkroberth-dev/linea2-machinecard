@@ -1235,7 +1235,7 @@
                       "alignContent": "flex-start",
                       "direction": "column",
                       "elementPosition": {
-                        "basis": "340px",
+                        "basis": "280px",
                         "grow": 0,
                         "shrink": 0
                       },
@@ -1523,7 +1523,9 @@
                           "pillFg": "#f2f4f7",
                           "stateText": "12m | Detenida",
                           "stopsText": "Anotar Paradas",
-                          "title": "Prensa Plegadora *"
+                          "title": "Prensa Plegadora *",
+                          "sku": "PLEG1",
+                          "temp": "23 °C"
                         },
                         {
                           "actions": [

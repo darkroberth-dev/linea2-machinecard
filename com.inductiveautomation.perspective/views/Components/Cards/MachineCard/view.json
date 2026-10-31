@@ -1,1183 +1,267 @@
 {
   "custom": {},
   "params": {
-    "actions": [
-      {
-        "badge": 2,
-        "edit": false,
-        "icon": "material/warning",
-        "iconColor": "#c48a12",
-        "label": "Anotar Paradas"
-      }
-    ],
-    "chart": [
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 07:00:00",
-        "name": "turno",
-        "toDate": "2026-10-29 07:10:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 07:10:00",
-        "name": "turno",
-        "toDate": "2026-10-29 07:22:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 07:22:00",
-        "name": "turno",
-        "toDate": "2026-10-29 07:40:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 07:40:00",
-        "name": "turno",
-        "toDate": "2026-10-29 07:52:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 07:52:00",
-        "name": "turno",
-        "toDate": "2026-10-29 08:10:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 08:10:00",
-        "name": "turno",
-        "toDate": "2026-10-29 08:26:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 08:26:00",
-        "name": "turno",
-        "toDate": "2026-10-29 08:50:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 08:50:00",
-        "name": "turno",
-        "toDate": "2026-10-29 09:08:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 09:08:00",
-        "name": "turno",
-        "toDate": "2026-10-29 09:40:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 09:40:00",
-        "name": "turno",
-        "toDate": "2026-10-29 09:56:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 09:56:00",
-        "name": "turno",
-        "toDate": "2026-10-29 10:20:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 10:20:00",
-        "name": "turno",
-        "toDate": "2026-10-29 10:40:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 10:40:00",
-        "name": "turno",
-        "toDate": "2026-10-29 11:10:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 11:10:00",
-        "name": "turno",
-        "toDate": "2026-10-29 11:30:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 11:30:00",
-        "name": "turno",
-        "toDate": "2026-10-29 12:10:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 12:10:00",
-        "name": "turno",
-        "toDate": "2026-10-29 12:40:00"
-      },
-      {
-        "color": "#3cbe78",
-        "fromDate": "2026-10-29 12:40:00",
-        "name": "turno",
-        "toDate": "2026-10-29 13:06:00"
-      },
-      {
-        "color": "#f0c94a",
-        "fromDate": "2026-10-29 13:06:00",
-        "name": "turno",
-        "toDate": "2026-10-29 13:18:00"
-      },
-      {
-        "color": "#e7eef1",
-        "fromDate": "2026-10-29 13:18:00",
-        "name": "turno",
-        "toDate": "2026-10-29 19:00:00"
-      }
-    ],
-    "headerBg": "#323842",
-    "metrics": [
-      {
-        "iconPathLeft": "material/qr_code_scanner",
-        "iconPathRigth": "",
-        "instancePosition": {},
-        "instanceStyle": {
-          "classes": ""
-        },
-        "percent": "ZDM2",
-        "text": "SKU"
-      },
-      {
-        "iconPathLeft": "material/layers",
-        "iconPathRigth": "",
-        "instancePosition": {},
-        "instanceStyle": {
-          "classes": ""
-        },
-        "percent": 54,
-        "text": "CLR"
-      },
-      {
-        "iconPathLeft": "material/access_time",
-        "iconPathRigth": "",
-        "instancePosition": {},
-        "instanceStyle": {
-          "classes": ""
-        },
-        "percent": 252.54,
-        "text": "Ultimo estado"
-      },
-      {
-        "iconPathLeft": "ignition/heat_exchanger",
-        "iconPathRigth": "",
-        "instancePosition": {},
-        "instanceStyle": {
-          "classes": ""
-        },
-        "percent": "40 °C",
-        "text": "Piezas salida secador"
-      },
-      {
-        "iconPathLeft": "ignition/heat_exchanger",
-        "iconPathRigth": "",
-        "instancePosition": {},
-        "instanceStyle": {
-          "classes": ""
-        },
-        "percent": 40,
-        "text": "Piezas salida secador",
-        "type": 0
-      }
-    ],
-    "operator": "Sin asignar",
-    "pillFg": "#98661f",
-    "stateText": "0m | Sin datos",
-    "stopsText": "Anotar Paradas",
+    "actions": [],
+    "chart": [],
+    "headerBg": "#2c313a",
+    "metrics": [],
+    "operator": "",
+    "pillFg": "#f2f4f7",
+    "sku": "",
+    "stateText": "",
+    "stopsText": "",
+    "temp": "",
     "title": "Máquina"
   },
   "propConfig": {
-    "params.actions": {
-      "paramDirection": "inout"
-    },
-    "params.chart": {
-      "paramDirection": "inout",
-      "persistent": true
-    },
-    "params.headerBg": {
-      "paramDirection": "inout"
-    },
-    "params.metrics": {
-      "paramDirection": "inout",
-      "persistent": true
-    },
-    "params.operator": {
-      "paramDirection": "inout"
-    },
-    "params.pillFg": {
-      "paramDirection": "inout"
-    },
-    "params.stateText": {
-      "paramDirection": "inout"
-    },
-    "params.stopsText": {
-      "paramDirection": "inout"
-    },
-    "params.title": {
-      "paramDirection": "inout"
-    }
+    "params.actions": {"paramDirection": "input", "persistent": true},
+    "params.chart": {"paramDirection": "input", "persistent": true},
+    "params.headerBg": {"paramDirection": "input", "persistent": true},
+    "params.metrics": {"paramDirection": "input", "persistent": true},
+    "params.operator": {"paramDirection": "input", "persistent": true},
+    "params.pillFg": {"paramDirection": "input", "persistent": true},
+    "params.sku": {"paramDirection": "input", "persistent": true},
+    "params.stateText": {"paramDirection": "input", "persistent": true},
+    "params.stopsText": {"paramDirection": "input", "persistent": true},
+    "params.temp": {"paramDirection": "input", "persistent": true},
+    "params.title": {"paramDirection": "input", "persistent": true}
   },
-  "props": {
-    "defaultSize": {
-      "height": 310,
-      "width": 1280
-    }
-  },
+  "props": {"defaultSize": {"height": 280, "width": 1280}},
   "root": {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "meta": {
-                  "name": "Title"
-                },
-                "position": {
-                  "grow": 1
-                },
-                "propConfig": {
-                  "props.text": {
-                    "binding": {
-                      "config": {
-                        "path": "view.params.title"
-                      },
-                      "type": "property"
-                    }
-                  }
-                },
-                "props": {
-                  "style": {
-                    "color": "#f2f4f7",
-                    "fontSize": "16px",
-                    "fontWeight": "700"
-                  }
-                },
-                "type": "ia.display.label"
-              }
-            ],
-            "meta": {
-              "name": "FlexContainer"
-            },
-            "position": {
-              "basis": "",
-              "shrink": 0
-            },
-            "props": {
-              "style": {
-                "overflow": "hidden",
-                "paddingRight": "10px"
-              }
-            },
-            "type": "ia.container.flex"
-          },
-          {
-            "children": [
-              {
-                "meta": {
-                  "name": "Tier_0"
-                },
-                "propConfig": {
-                  "props.textStyle.color": {
-                    "binding": {
-                      "config": {
-                        "path": "view.params.pillFg"
-                      },
-                      "type": "property"
-                    }
-                  }
-                },
-                "props": {
-                  "style": {
-                    "fontFamily": "Roboto",
-                    "fontSize": "11px",
-                    "fontWeight": "normal",
-                    "marginLeft": "8px"
-                  },
-                  "text": "OEE"
-                },
-                "type": "ia.display.label"
-              },
-              {
-                "meta": {
-                  "name": "Day"
-                },
-                "position": {
-                  "basis": "30px",
-                  "shrink": 0
-                },
-                "propConfig": {
-                  "props.style.color": {
-                    "binding": {
-                      "config": {
-                        "path": "view.params.pillFg"
-                      },
-                      "type": "property"
-                    }
-                  }
-                },
-                "props": {
-                  "style": {
-                    "backgroundColor": "#FFCA8A",
-                    "borderRadius": "999px",
-                    "fontSize": "13px",
-                    "fontWeight": "700",
-                    "marginLeft": "20px",
-                    "textAlign": "center"
-                  },
-                  "text": "Día"
-                },
-                "type": "ia.display.label"
-              },
-              {
-                "meta": {
-                  "name": "Spacer"
-                },
-                "position": {
-                  "basis": "0px",
-                  "grow": 1
-                },
-                "type": "ia.container.flex"
-              }
-            ],
-            "meta": {
-              "name": "FlexContainer_0"
-            },
-            "position": {
-              "basis": "50%",
-              "grow": 1
-            },
-            "props": {
-              "style": {
-                "borderLeft": "2px solid #3a414b",
-                "overflow": "hidden",
-                "paddingLeft": "5px"
-              }
-            },
-            "type": "ia.container.flex"
-          },
-          {
-            "children": [
-              {
-                "meta": {
-                  "name": "Icon"
-                },
-                "position": {
-                  "basis": "30px"
-                },
-                "propConfig": {
-                  "props.color": {
-                    "binding": {
-                      "config": {
-                        "path": "view.params.pillFg"
-                      },
-                      "type": "property"
-                    }
-                  }
-                },
-                "props": {
-                  "path": "material/access_time"
-                },
-                "type": "ia.display.icon"
-              },
-              {
-                "meta": {
-                  "name": "State"
-                },
-                "position": {
-                  "grow": 1
-                },
-                "propConfig": {
-                  "props.style.color": {
-                    "binding": {
-                      "config": {
-                        "path": "view.params.pillFg"
-                      },
-                      "type": "property"
-                    }
-                  },
-                  "props.text": {
-                    "binding": {
-                      "config": {
-                        "path": "view.params.stateText"
-                      },
-                      "type": "property"
-                    }
-                  }
-                },
-                "props": {
-                  "style": {
-                    "fontSize": "13px",
-                    "fontWeight": "700",
-                    "paddingLeft": "10px"
-                  }
-                },
-                "type": "ia.display.label"
-              }
-            ],
-            "meta": {
-              "name": "FlexContainer_1"
-            },
-            "position": {
-              "basis": "15%",
-              "shrink": 0
-            },
-            "props": {
-              "style": {
-                "overflow": "hidden"
-              }
-            },
-            "type": "ia.container.flex"
-          }
-        ],
-        "meta": {
-          "name": "Header"
-        },
-        "position": {
-          "basis": "20%",
-          "shrink": 0
-        },
-        "propConfig": {
-          "props.style.backgroundColor": {
-            "binding": {
-              "config": {
-                "path": "view.params.headerBg"
-              },
-              "type": "property"
-            }
-          }
-        },
-        "props": {
-          "alignItems": "center",
-          "style": {
-            "alignItems": "center",
-            "overflow": "hidden",
-            "paddingLeft": "8px",
-            "paddingRight": "1px",
-            "backgroundColor": "#323842",
-            "borderBottom": "1px solid #3a414b"
-          },
-          "wrap": "wrap"
-        },
-        "type": "ia.container.flex"
-      },
-      {
-        "children": [
-          {
-            "meta": {
-              "name": "metric"
-            },
-            "position": {
-              "grow": 1
-            },
-            "propConfig": {
-              "props.instances": {
-                "binding": {
-                  "config": {
-                    "bidirectional": true,
-                    "path": "view.params.metrics"
-                  },
-                  "type": "property"
-                }
-              }
-            },
-            "props": {
-              "elementPosition": {
-                "basis": "",
-                "grow": 0,
-                "shrink": 0
-              },
-              "elementStyle": {
-                "borderRight": "2px solid #3a414ba0",
-                "marginBottom": "5px",
-                "marginLeft": "1%",
-                "marginTop": "5px"
-              },
-              "path": "Components/Cards/Metric",
-              "useDefaultViewHeight": false
-            },
-            "type": "ia.display.flex-repeater"
-          }
-        ],
-        "meta": {
-          "name": "Metrics"
-        },
-        "position": {
-          "basis": "30%",
-          "shrink": 0
-        },
-        "props": {
-          "style": {
-            "backgroundColor": "#2a3038",
-            "overflow": "hidden"
-          },
-          "wrap": "wrap"
-        },
-        "type": "ia.container.flex"
-      },
-      {
-        "children": [
-          {
-            "meta": {
-              "name": "XYChart_0"
-            },
-            "position": {
-              "basis": "100px",
-              "shrink": 0
-            },
-            "propConfig": {
-              "props.dataSources.example": {
-                "binding": {
-                  "config": {
-                    "bidirectional": true,
-                    "path": "view.params.chart"
-                  },
-                  "type": "property"
-                }
-              }
-            },
-            "props": {
-              "dataSources": {},
-              "legend": {
-                "enabled": false
-              },
-              "series": [
-                {
-                  "candlestick": {
-                    "appearance": {
-                      "deriveFieldsFromData": {
-                        "fill": {
-                          "color": "",
-                          "opacity": ""
-                        },
-                        "stroke": {
-                          "color": "",
-                          "opacity": "",
-                          "width": ""
-                        }
-                      },
-                      "fill": {
-                        "color": "",
-                        "opacity": 1
-                      },
-                      "heatRules": {
-                        "dataField": "",
-                        "enabled": false,
-                        "max": "",
-                        "min": ""
-                      },
-                      "stacked": false,
-                      "stroke": {
-                        "color": "",
-                        "opacity": 1,
-                        "width": 1
-                      }
-                    },
-                    "high": {
-                      "x": "",
-                      "y": ""
-                    },
-                    "low": {
-                      "x": "",
-                      "y": ""
-                    },
-                    "open": {
-                      "x": "",
-                      "y": ""
-                    }
-                  },
-                  "column": {
-                    "appearance": {
-                      "deriveFieldsFromData": {
-                        "fill": {
-                          "color": "color",
-                          "opacity": ""
-                        },
-                        "stroke": {
-                          "color": "color",
-                          "opacity": "",
-                          "width": ""
-                        }
-                      },
-                      "fill": {
-                        "color": "",
-                        "opacity": 1
-                      },
-                      "heatRules": {
-                        "dataField": "",
-                        "enabled": false,
-                        "max": "",
-                        "min": ""
-                      },
-                      "height": null,
-                      "stacked": false,
-                      "stroke": {
-                        "color": "",
-                        "opacity": 1,
-                        "width": 1
-                      },
-                      "width": null
-                    },
-                    "open": {
-                      "x": "fromDate",
-                      "y": ""
-                    }
-                  },
-                  "data": {
-                    "source": "example",
-                    "x": "toDate",
-                    "y": "name"
-                  },
-                  "defaultState": {
-                    "visible": true
-                  },
-                  "hiddenInLegend": false,
-                  "label": {
-                    "text": "Process Temp"
-                  },
-                  "line": {
-                    "appearance": {
-                      "bullets": [
-                        {
-                          "deriveFieldsFromData": {
-                            "fill": {
-                              "color": "",
-                              "opacity": ""
-                            },
-                            "rotation": "",
-                            "stroke": {
-                              "color": "",
-                              "opacity": "",
-                              "width": ""
-                            }
-                          },
-                          "enabled": false,
-                          "fill": {
-                            "color": "",
-                            "opacity": 1
-                          },
-                          "heatRules": {
-                            "dataField": "",
-                            "enabled": false,
-                            "max": 100,
-                            "min": 2
-                          },
-                          "height": 10,
-                          "label": {
-                            "position": {
-                              "dx": 0,
-                              "dy": 0
-                            },
-                            "text": "{value}"
-                          },
-                          "render": "circle",
-                          "rotation": 0,
-                          "stroke": {
-                            "color": "",
-                            "opacity": 1,
-                            "width": 1
-                          },
-                          "tooltip": {
-                            "background": {
-                              "color": "",
-                              "opacity": 1
-                            },
-                            "cornerRadius": 3,
-                            "enabled": true,
-                            "pointerLength": 4,
-                            "text": "{name}: [bold]{valueY}[/]"
-                          },
-                          "width": 10
-                        }
-                      ],
-                      "connect": true,
-                      "fill": {
-                        "color": "",
-                        "opacity": 0
-                      },
-                      "minDistance": 0.5,
-                      "stroke": {
-                        "color": "",
-                        "dashArray": "",
-                        "opacity": 1,
-                        "width": 3
-                      },
-                      "tensionX": 1,
-                      "tensionY": 1
-                    },
-                    "open": {
-                      "x": "",
-                      "y": ""
-                    }
-                  },
-                  "name": "",
-                  "render": "column",
-                  "stepLine": {
-                    "appearance": {
-                      "bullets": [
-                        {
-                          "deriveFieldsFromData": {
-                            "fill": {
-                              "color": "",
-                              "opacity": ""
-                            },
-                            "rotation": "",
-                            "stroke": {
-                              "color": "",
-                              "opacity": "",
-                              "width": ""
-                            }
-                          },
-                          "enabled": true,
-                          "fill": {
-                            "color": "",
-                            "opacity": 1
-                          },
-                          "heatRules": {
-                            "dataField": "",
-                            "enabled": false,
-                            "max": 100,
-                            "min": 2
-                          },
-                          "height": 10,
-                          "label": {
-                            "position": {
-                              "dx": 0,
-                              "dy": 0
-                            },
-                            "text": "{value}"
-                          },
-                          "render": "circle",
-                          "rotation": 0,
-                          "stroke": {
-                            "color": "",
-                            "opacity": 1,
-                            "width": 1
-                          },
-                          "tooltip": {
-                            "background": {
-                              "color": "",
-                              "opacity": 1
-                            },
-                            "cornerRadius": 3,
-                            "enabled": true,
-                            "pointerLength": 4,
-                            "text": "{name}: [bold]{valueY}[/]"
-                          },
-                          "width": 10
-                        }
-                      ],
-                      "connect": true,
-                      "fill": {
-                        "color": "",
-                        "opacity": 0
-                      },
-                      "minDistance": 0.5,
-                      "stroke": {
-                        "color": "",
-                        "dashArray": "",
-                        "opacity": 1,
-                        "width": 3
-                      },
-                      "tensionX": 1,
-                      "tensionY": 1
-                    },
-                    "open": {
-                      "x": "",
-                      "y": ""
-                    }
-                  },
-                  "tooltip": {
-                    "background": {
-                      "color": "",
-                      "opacity": 1
-                    },
-                    "cornerRadius": 3,
-                    "enabled": true,
-                    "pointerLength": 4,
-                    "text": "{name}: [bold]{valueY}[/]"
-                  },
-                  "visible": true,
-                  "xAxis": "time",
-                  "yAxis": "status",
-                  "zIndex": 0
-                }
-              ],
-              "xAxes": [
-                {
-                  "appearance": {
-                    "font": {
-                      "size": "",
-                      "weight": 500
-                    },
-                    "grid": {
-                      "color": "",
-                      "dashArray": "",
-                      "minDistance": 60,
-                      "opacity": 0,
-                      "position": 0.5
-                    },
-                    "inside": false,
-                    "labels": {
-                      "color": "",
-                      "horizontalCenter": "middle",
-                      "opacity": 1,
-                      "rotation": 0,
-                      "verticalCenter": "middle"
-                    },
-                    "opposite": false
-                  },
-                  "category": {
-                    "break": {
-                      "enabled": false,
-                      "endCategory": "",
-                      "size": 0.05,
-                      "startCategory": ""
-                    }
-                  },
-                  "date": {
-                    "baseInterval": {
-                      "count": 1,
-                      "enabled": true,
-                      "skipEmptyPeriods": false,
-                      "timeUnit": "hour"
-                    },
-                    "break": {
-                      "enabled": false,
-                      "endDate": "",
-                      "size": 0.05,
-                      "startDate": ""
-                    },
-                    "format": "HH:mm a",
-                    "inputFormat": "yyyy-MM-dd kk:mm:ss",
-                    "range": {
-                      "max": "12:00 AM",
-                      "min": "07:00 AM",
-                      "useStrict": false
-                    }
-                  },
-                  "inversed": false,
-                  "label": {
-                    "color": "",
-                    "enabled": false,
-                    "text": ""
-                  },
-                  "name": "time",
-                  "render": "date",
-                  "tooltip": {
-                    "background": {
-                      "color": "",
-                      "opacity": 1
-                    },
-                    "cornerRadius": 3,
-                    "enabled": true,
-                    "pointerLength": 4,
-                    "text": ""
-                  },
-                  "value": {
-                    "break": {
-                      "enabled": false,
-                      "endValue": 100,
-                      "size": 0.05,
-                      "startValue": 0
-                    },
-                    "format": "#,###.##",
-                    "logarithmic": false,
-                    "range": {
-                      "max": "",
-                      "min": "",
-                      "useStrict": false
-                    }
-                  },
-                  "visible": true
-                }
-              ],
-              "yAxes": [
-                {
-                  "appearance": {
-                    "font": {
-                      "size": "",
-                      "weight": 500
-                    },
-                    "grid": {
-                      "color": "",
-                      "dashArray": "",
-                      "minDistance": null,
-                      "opacity": 0,
-                      "position": 0.5
-                    },
-                    "inside": false,
-                    "labels": {
-                      "color": "",
-                      "horizontalCenter": "middle",
-                      "opacity": 1,
-                      "rotation": 0,
-                      "verticalCenter": "middle"
-                    },
-                    "opposite": false
-                  },
-                  "category": {
-                    "break": {
-                      "enabled": false,
-                      "endCategory": "",
-                      "size": 0.05,
-                      "startCategory": ""
-                    }
-                  },
-                  "date": {
-                    "baseInterval": {
-                      "count": 1,
-                      "enabled": false,
-                      "skipEmptyPeriods": false,
-                      "timeUnit": "hour"
-                    },
-                    "break": {
-                      "enabled": false,
-                      "endDate": "",
-                      "size": 0.05,
-                      "startDate": ""
-                    },
-                    "format": "M/d/yyyy HH:mm:ss",
-                    "inputFormat": "yyyy-MM-dd kk:mm:ss",
-                    "range": {
-                      "max": "",
-                      "min": "",
-                      "useStrict": false
-                    }
-                  },
-                  "inversed": false,
-                  "label": {
-                    "color": "",
-                    "enabled": false,
-                    "text": ""
-                  },
-                  "name": "status",
-                  "render": "category",
-                  "tooltip": {
-                    "background": {
-                      "color": "",
-                      "opacity": 1
-                    },
-                    "cornerRadius": 3,
-                    "enabled": true,
-                    "pointerLength": 4,
-                    "text": ""
-                  },
-                  "value": {
-                    "break": {
-                      "enabled": false,
-                      "endValue": 100,
-                      "size": 0.05,
-                      "startValue": 0
-                    },
-                    "format": "#,###.##",
-                    "logarithmic": false,
-                    "range": {
-                      "max": "",
-                      "min": "",
-                      "useStrict": false
-                    }
-                  },
-                  "visible": false
-                }
-              ]
-            },
-            "type": "ia.chart.xy"
-          }
-        ],
-        "meta": {
-          "name": "Timeline"
-        },
-        "position": {
-          "basis": "30%",
-          "shrink": 0
-        },
-        "props": {
-          "direction": "column",
-          "style": {
-            "overflow": "hidden"
-          }
-        },
-        "type": "ia.container.flex"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "meta": {
-                  "name": "Actions"
-                },
-                "position": {
-                  "grow": 1
-                },
-                "propConfig": {
-                  "props.instances": {
-                    "binding": {
-                      "config": {
-                        "bidirectional": true,
-                        "path": "view.params.actions"
-                      },
-                      "type": "property"
-                    }
-                  }
-                },
-                "props": {
-                  "alignContent": "flex-start",
-                  "alignItems": "center",
-                  "elementPosition": {
-                    "basis": "auto",
-                    "grow": 0,
-                    "shrink": 0
-                  },
-                  "elementStyle": {
-                    "marginBottom": "4px",
-                    "marginRight": "8px"
-                  },
-                  "path": "Components/Cards/ActionCard",
-                  "style": {
-                    "backgroundColor": "#2a3038",
-                    "borderTop": "1px solid #3a414b",
-                    "overflow": "hidden",
-                    "padding": "8px 12px",
-                    "width": "100%"
-                  },
-                  "useDefaultViewHeight": false,
-                  "useDefaultViewWidth": false,
-                  "wrap": "wrap"
-                },
-                "type": "ia.display.flex-repeater"
-              }
-            ],
-            "meta": {
-              "name": "FlexContainer"
-            },
-            "position": {
-              "basis": "90%",
-              "shrink": 0
-            },
-            "type": "ia.container.flex"
-          },
-          {
-            "children": [
-              {
-                "events": {
-                  "dom": {
-                    "onClick": {
-                      "config": {
-                        "script": "\tpopup.notification.info(\"Máquina\", \"Ajustes de la máquina\", \"info\")\n"
-                      },
-                      "scope": "G",
-                      "type": "script"
-                    }
-                  }
-                },
-                "meta": {
-                  "name": "Settings"
-                },
-                "position": {
-                  "basis": "32px",
-                  "shrink": 0
-                },
-                "props": {
-                  "color": "#5c6b7a",
-                  "path": "material/settings",
-                  "style": {
-                    "backgroundColor": "#2a3038",
-                    "border": "1px solid #3a414b",
-                    "borderRadius": "10px",
-                    "classes": "lift",
-                    "height": "28px",
-                    "marginLeft": "6px",
-                    "padding": "4px",
-                    "width": "28px"
-                  }
-                },
-                "type": "ia.display.icon"
-              },
-              {
-                "events": {
-                  "dom": {
-                    "onClick": {
-                      "config": {
-                        "script": "\tpopup.notification.info(\"Máquina\", \"Columnas\", \"info\")\n"
-                      },
-                      "scope": "G",
-                      "type": "script"
-                    }
-                  }
-                },
-                "meta": {
-                  "name": "Columns"
-                },
-                "position": {
-                  "basis": "32px",
-                  "shrink": 0
-                },
-                "props": {
-                  "color": "#5c6b7a",
-                  "path": "material/tune",
-                  "style": {
-                    "backgroundColor": "#2a3038",
-                    "border": "1px solid #3a414b",
-                    "borderRadius": "10px",
-                    "classes": "lift",
-                    "height": "28px",
-                    "marginLeft": "6px",
-                    "padding": "4px",
-                    "width": "28px"
-                  }
-                },
-                "type": "ia.display.icon"
-              }
-            ],
-            "meta": {
-              "name": "FlexContainer_0"
-            },
-            "position": {
-              "basis": "10%",
-              "shrink": 0
-            },
-            "props": {
-              "alignItems": "center",
-              "justify": "flex-end",
-              "style": {
-                "overflow": "hidden",
-                "padding": "8px 12px"
-              }
-            },
-            "type": "ia.container.flex"
-          }
-        ],
-        "meta": {
-          "name": "FlexContainer"
-        },
-        "position": {
-          "basis": "20%",
-          "shrink": 0
-        },
-        "type": "ia.container.flex"
-      }
-    ],
-    "meta": {
-      "name": "root"
-    },
-    "position": {
-      "basis": "auto",
-      "grow": 0,
-      "shrink": 0
-    },
+    "meta": {"name": "root"},
+    "type": "ia.container.flex",
     "props": {
       "direction": "column",
       "style": {
-        "backgroundColor": "#2a3038",
+        "backgroundColor": "#2c313a",
         "border": "1px solid #3a414b",
-        "borderRadius": "16px",
-        "box-shadow": "value",
+        "borderRadius": "12px",
         "height": "100%",
-        "overflow": "hidden"
+        "overflow": "hidden",
+        "width": "100%"
       }
     },
-    "type": "ia.container.flex"
+    "children": [
+      {
+        "meta": {"name": "Header"},
+        "type": "ia.container.flex",
+        "position": {"basis": "48px", "shrink": 0},
+        "props": {"alignItems": "center", "style": {"padding": "0 16px", "width": "100%"}},
+        "children": [
+          {
+            "meta": {"name": "Title"},
+            "type": "ia.display.label",
+            "propConfig": {"props.text": {"binding": {"config": {"path": "view.params.title"}, "type": "property"}}},
+            "props": {"text": "Prensa Plegadora *", "style": {"color": "#f4f6f8", "fontSize": "18px", "fontWeight": "700"}}
+          },
+          {
+            "meta": {"name": "SkuHead"},
+            "type": "ia.display.label",
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {"path": "view.params.sku"},
+                  "transforms": [{"code": "\tvalue = '' if value is None else str(value).strip()\n\treturn ('SKU: ' + value) if value else ''", "type": "script"}],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {"text": "SKU: PLEG1", "style": {"color": "#c5ccd6", "fontSize": "14px", "marginLeft": "12px"}}
+          },
+          {"meta": {"name": "Spacer"}, "type": "ia.container.flex", "position": {"grow": 1, "basis": "0px"}, "props": {}},
+          {
+            "meta": {"name": "Oee"},
+            "type": "ia.display.label",
+            "props": {"text": "OEE", "style": {"border": "1px solid #6d7c90", "borderRadius": "999px", "color": "#d5dbe3", "fontSize": "12px", "fontWeight": "700", "padding": "3px 10px"}}
+          },
+          {
+            "meta": {"name": "Dia"},
+            "type": "ia.display.label",
+            "props": {"text": "Día", "style": {"backgroundColor": "#3d6ad6", "borderRadius": "999px", "color": "#ffffff", "fontSize": "12px", "fontWeight": "700", "marginLeft": "8px", "padding": "4px 12px"}}
+          },
+          {
+            "meta": {"name": "Hist"},
+            "type": "ia.display.label",
+            "props": {"text": "Histórico", "style": {"border": "1px solid #6d7c90", "borderRadius": "999px", "color": "#d5dbe3", "fontSize": "12px", "fontWeight": "700", "marginLeft": "8px", "padding": "3px 10px"}}
+          }
+        ]
+      },
+      {
+        "meta": {"name": "Metrics"},
+        "type": "ia.container.flex",
+        "position": {"basis": "108px", "shrink": 0},
+        "props": {"alignItems": "center", "style": {"width": "100%"}},
+        "children": [
+          {
+            "meta": {"name": "SkuMetric"},
+            "type": "ia.container.flex",
+            "position": {"basis": "0px", "grow": 1},
+            "props": {"alignItems": "center", "justify": "center", "style": {"borderRight": "1px solid #3a414b", "gap": "12px", "height": "100%"}},
+            "children": [
+              {"meta": {"name": "SkuI"}, "type": "ia.display.icon", "position": {"basis": "28px", "shrink": 0}, "props": {"path": "material/qr_code_scanner", "color": "#d5dbe3", "style": {"height": "26px", "width": "26px"}}},
+              {"meta": {"name": "SkuTexts"}, "type": "ia.container.flex", "props": {"direction": "column"}, "children": [
+                {"meta": {"name": "SkuV"}, "type": "ia.display.label", "propConfig": {"props.text": {"binding": {"config": {"path": "view.params.sku"}, "transforms": [{"code": "\tvalue = '' if value is None else str(value).strip()\n\treturn ('SKU: ' + value) if value else 'SKU'", "type": "script"}], "type": "property"}}}, "props": {"text": "SKU: PLEG1", "style": {"color": "#f4f6f8", "fontSize": "20px", "fontWeight": "700"}}},
+                {"meta": {"name": "SkuC"}, "type": "ia.display.label", "props": {"text": "SKU", "style": {"color": "#9aa3ad", "fontSize": "11px", "fontWeight": "700", "letterSpacing": "0.04em", "marginTop": "4px"}}}
+              ]}
+            ]
+          },
+          {
+            "meta": {"name": "ProdMetric"},
+            "type": "ia.container.flex",
+            "position": {"basis": "0px", "grow": 1},
+            "props": {"alignItems": "center", "justify": "center", "style": {"borderRight": "1px solid #3a414b", "gap": "12px", "height": "100%"}},
+            "children": [
+              {"meta": {"name": "ProdI"}, "type": "ia.display.icon", "position": {"basis": "28px", "shrink": 0}, "props": {"path": "material/layers", "color": "#d5dbe3", "style": {"height": "26px", "width": "26px"}}},
+              {"meta": {"name": "ProdTexts"}, "type": "ia.container.flex", "props": {"direction": "column"}, "children": [
+                {"meta": {"name": "ProdV"}, "type": "ia.display.label", "propConfig": {"props.text": {"binding": {"config": {"path": "view.params.metrics"}, "transforms": [{"code": "\tfor m in value or []:\n\t\tif str(m.get('text','')).strip().upper() == 'PRODUCTOS TOTALES':\n\t\t\treturn str(m.get('percent',''))\n\treturn '—'", "type": "script"}], "type": "property"}}}, "props": {"text": "137", "style": {"color": "#f4f6f8", "fontSize": "22px", "fontWeight": "700"}}},
+                {"meta": {"name": "ProdC"}, "type": "ia.display.label", "props": {"text": "PRODUCTOS TOTALES", "style": {"color": "#9aa3ad", "fontSize": "11px", "fontWeight": "700", "letterSpacing": "0.03em", "marginTop": "4px"}}}
+              ]}
+            ]
+          },
+          {
+            "meta": {"name": "LastMetric"},
+            "type": "ia.container.flex",
+            "position": {"basis": "0px", "grow": 1.15},
+            "props": {"alignItems": "center", "justify": "center", "style": {"borderRight": "1px solid #3a414b", "gap": "12px", "height": "100%"}},
+            "children": [
+              {"meta": {"name": "LastI"}, "type": "ia.display.icon", "position": {"basis": "28px", "shrink": 0}, "props": {"path": "material/schedule", "color": "#d5dbe3", "style": {"height": "26px", "width": "26px"}}},
+              {"meta": {"name": "LastTexts"}, "type": "ia.container.flex", "props": {"direction": "column"}, "children": [
+                {"meta": {"name": "LastV"}, "type": "ia.display.label", "propConfig": {"props.text": {"binding": {"config": {"path": "view.params.stateText"}, "type": "property"}}}, "props": {"text": "252.54 min", "style": {"color": "#f4f6f8", "fontSize": "20px", "fontWeight": "700"}}},
+                {"meta": {"name": "LastS"}, "type": "ia.display.label", "props": {"text": "(Ultimo Estado)", "style": {"color": "#9aa3ad", "fontSize": "12px"}}},
+                {"meta": {"name": "LastC"}, "type": "ia.display.label", "props": {"text": "ULTIMO ESTADO", "style": {"color": "#9aa3ad", "fontSize": "11px", "fontWeight": "700", "letterSpacing": "0.03em", "marginTop": "2px"}}}
+              ]}
+            ]
+          },
+          {
+            "meta": {"name": "TempMetric"},
+            "type": "ia.container.flex",
+            "position": {"basis": "0px", "grow": 1},
+            "props": {"alignItems": "center", "justify": "center", "style": {"borderRight": "1px solid #3a414b", "gap": "12px", "height": "100%"}},
+            "children": [
+              {"meta": {"name": "TempI"}, "type": "ia.display.icon", "position": {"basis": "28px", "shrink": 0}, "props": {"path": "material/device_thermostat", "color": "#d5dbe3", "style": {"height": "26px", "width": "26px"}}},
+              {"meta": {"name": "TempTexts"}, "type": "ia.container.flex", "props": {"direction": "column"}, "children": [
+                {"meta": {"name": "TempV"}, "type": "ia.display.label", "propConfig": {"props.text": {"binding": {"config": {"path": "view.params.temp"}, "transforms": [{"code": "\tvalue = '' if value is None else str(value).strip()\n\treturn (value + ' (Secador)') if value else '—'", "type": "script"}], "type": "property"}}}, "props": {"text": "23 °C (Secador)", "style": {"color": "#f4f6f8", "fontSize": "20px", "fontWeight": "700"}}},
+                {"meta": {"name": "TempC"}, "type": "ia.display.label", "props": {"text": "TEMP (SECADOR)", "style": {"color": "#9aa3ad", "fontSize": "11px", "fontWeight": "700", "letterSpacing": "0.03em", "marginTop": "4px"}}}
+              ]}
+            ]
+          },
+          {
+            "meta": {"name": "Rate"},
+            "type": "ia.container.flex",
+            "position": {"basis": "170px", "grow": 0, "shrink": 0},
+            "props": {"direction": "column", "alignItems": "center", "justify": "center"},
+            "children": [
+              {
+                "meta": {"name": "Gauge"},
+                "type": "ia.chart.simple-gauge",
+                "position": {"basis": "72px", "shrink": 0},
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {"path": "view.params.metrics"},
+                      "transforms": [{"code": "\tfor key in ('RENDIMIENTO', 'OEE'):\n\t\tfor m in value or []:\n\t\t\tif str(m.get('text','')).strip().upper() == key:\n\t\t\t\ttry:\n\t\t\t\t\treturn float(str(m.get('percent','')).replace('%','').strip())\n\t\t\t\texcept:\n\t\t\t\t\treturn 0\n\treturn 0", "type": "script"}],
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {"animate": true, "arc": {"width": "14%"}, "label": {"size": "14px", "units": "%"}, "style": {"height": "72px", "width": "130px"}, "value": 85}
+              },
+              {"meta": {"name": "RateC"}, "type": "ia.display.label", "props": {"text": "PRODUCCIÓN / MINUTO", "style": {"color": "#9aa3ad", "fontSize": "11px", "fontWeight": "700", "marginTop": "2px"}}}
+            ]
+          }
+        ]
+      },
+      {
+        "meta": {"name": "Timeline"},
+        "type": "ia.container.flex",
+        "position": {"basis": "58px", "shrink": 0},
+        "props": {"direction": "column", "justify": "center", "style": {"padding": "0 16px"}},
+        "children": [
+          {
+            "meta": {"name": "StateBar"},
+            "type": "ia.display.flex-repeater",
+            "position": {"basis": "14px", "shrink": 0},
+            "propConfig": {
+              "props.instances": {
+                "binding": {
+                  "config": {"path": "view.params.chart"},
+                  "transforms": [{"code": "\tdef minutes(s):\n\t\td, t = str(s).split(' ')\n\t\ty, mo, dd = [int(x) for x in d.split('-')]\n\t\thh, mm, ss = [int(x) for x in t.split(':')]\n\t\treturn ((dd * 24 + hh) * 60) + mm\n\tout = []\n\tfor row in value or []:\n\t\ttry:\n\t\t\tmins = max(1, minutes(row.get('toDate')) - minutes(row.get('fromDate')))\n\t\texcept:\n\t\t\tmins = 1\n\t\tout.append({\n\t\t\t'color': row.get('color') or '#3ecf7a',\n\t\t\t'instancePosition': {'grow': mins, 'shrink': 1, 'basis': '0px'}\n\t\t})\n\treturn out", "type": "script"}],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "path": "Components/Cards/StateSeg",
+              "direction": "row",
+              "alignItems": "center",
+              "useDefaultViewHeight": false,
+              "useDefaultViewWidth": false,
+              "elementPosition": {"basis": "0px", "grow": 1, "shrink": 1},
+              "style": {"backgroundColor": "#3a414b", "borderRadius": "4px", "height": "14px", "overflow": "hidden", "width": "100%"}
+            }
+          },
+          {
+            "meta": {"name": "Hours"},
+            "type": "ia.container.flex",
+            "props": {"justify": "space-between", "style": {"marginTop": "6px", "width": "100%"}},
+            "children": [
+              {"meta": {"name": "H0"}, "type": "ia.display.label", "props": {"text": "06:00 AM", "style": {"color": "#9aa3ad", "fontSize": "11px"}}},
+              {"meta": {"name": "H1"}, "type": "ia.display.label", "props": {"text": "08:00 AM", "style": {"color": "#9aa3ad", "fontSize": "11px"}}},
+              {"meta": {"name": "H2"}, "type": "ia.display.label", "props": {"text": "10:00 AM", "style": {"color": "#9aa3ad", "fontSize": "11px"}}},
+              {"meta": {"name": "H3"}, "type": "ia.display.label", "props": {"text": "12:00 PM", "style": {"color": "#9aa3ad", "fontSize": "11px"}}},
+              {"meta": {"name": "H4"}, "type": "ia.display.label", "props": {"text": "02:00 PM", "style": {"color": "#9aa3ad", "fontSize": "11px"}}},
+              {"meta": {"name": "H5"}, "type": "ia.display.label", "props": {"text": "04:00 PM", "style": {"color": "#9aa3ad", "fontSize": "11px"}}},
+              {"meta": {"name": "H6"}, "type": "ia.display.label", "props": {"text": "06:00 PM", "style": {"color": "#9aa3ad", "fontSize": "11px"}}}
+            ]
+          }
+        ]
+      },
+      {
+        "meta": {"name": "Footer"},
+        "type": "ia.container.flex",
+        "position": {"basis": "52px", "shrink": 0},
+        "props": {"alignItems": "center", "style": {"borderTop": "1px solid #3a414b", "width": "100%"}},
+        "children": [
+          {
+            "meta": {"name": "Disp"},
+            "type": "ia.container.flex",
+            "position": {"basis": "0px", "grow": 1},
+            "props": {"alignItems": "center", "justify": "center", "style": {"borderRight": "1px solid #3a414b", "gap": "8px", "height": "100%"}},
+            "children": [
+              {"meta": {"name": "DispI"}, "type": "ia.display.icon", "position": {"basis": "22px", "shrink": 0}, "props": {"path": "material/show_chart", "color": "#d5dbe3", "style": {"height": "20px", "width": "20px"}}},
+              {"meta": {"name": "DispT"}, "type": "ia.display.label", "propConfig": {"props.text": {"binding": {"config": {"path": "view.params.metrics"}, "transforms": [{"code": "\tfor m in value or []:\n\t\tif str(m.get('text','')).strip().upper() == 'DISPONIBILIDAD':\n\t\t\treturn 'Disponibilidad: ' + str(m.get('percent',''))\n\treturn 'Disponibilidad: —'", "type": "script"}], "type": "property"}}}, "props": {"text": "Disponibilidad: 28%", "style": {"color": "#f4f6f8", "fontSize": "15px", "fontWeight": "600"}}}
+            ]
+          },
+          {
+            "meta": {"name": "Paro"},
+            "type": "ia.container.flex",
+            "position": {"basis": "0px", "grow": 1},
+            "props": {"alignItems": "center", "justify": "center", "style": {"borderRight": "1px solid #3a414b", "gap": "8px", "height": "100%"}},
+            "children": [
+              {"meta": {"name": "ParoI"}, "type": "ia.display.icon", "position": {"basis": "22px", "shrink": 0}, "props": {"path": "material/schedule", "color": "#d5dbe3", "style": {"height": "20px", "width": "20px"}}},
+              {"meta": {"name": "ParoT"}, "type": "ia.display.label", "propConfig": {"props.text": {"binding": {"config": {"path": "view.params.metrics"}, "transforms": [{"code": "\tfor m in value or []:\n\t\tif str(m.get('text','')).strip().upper() == 'TIEMPO EN PARO':\n\t\t\treturn 'Tiempo Paro: ' + str(m.get('percent',''))\n\treturn 'Tiempo Paro: —'", "type": "script"}], "type": "property"}}}, "props": {"text": "Tiempo Paro: 0h 9m", "style": {"color": "#f4f6f8", "fontSize": "15px", "fontWeight": "600"}}}
+            ]
+          },
+          {
+            "meta": {"name": "Burners"},
+            "type": "ia.container.flex",
+            "position": {"basis": "0px", "grow": 1.2},
+            "props": {"alignItems": "center", "justify": "center", "style": {"height": "100%"}},
+            "children": [
+              {"meta": {"name": "BurnI"}, "type": "ia.display.icon", "position": {"basis": "22px", "shrink": 0}, "props": {"path": "material/lightbulb", "color": "#d5dbe3", "style": {"height": "20px", "width": "20px"}}},
+              {"meta": {"name": "BurnL"}, "type": "ia.display.label", "props": {"text": "QUEMADORES", "style": {"color": "#f4f6f8", "fontSize": "14px", "fontWeight": "700", "marginLeft": "8px", "marginRight": "8px"}}},
+              {"meta": {"name": "Q1"}, "type": "ia.display.label", "props": {"text": "Q1", "style": {"color": "#d5dbe3", "fontSize": "13px", "fontWeight": "700", "marginRight": "4px"}}},
+              {"meta": {"name": "D1"}, "type": "ia.display.label", "position": {"basis": "12px", "shrink": 0}, "props": {"text": "", "style": {"backgroundColor": "#3ecf7a", "borderRadius": "999px", "height": "12px", "width": "12px", "marginRight": "8px"}}},
+              {"meta": {"name": "Q2"}, "type": "ia.display.label", "props": {"text": "Q2", "style": {"color": "#d5dbe3", "fontSize": "13px", "fontWeight": "700", "marginRight": "4px"}}},
+              {"meta": {"name": "D2"}, "type": "ia.display.label", "position": {"basis": "12px", "shrink": 0}, "props": {"text": "", "style": {"backgroundColor": "#3ecf7a", "borderRadius": "999px", "height": "12px", "width": "12px", "marginRight": "8px"}}},
+              {"meta": {"name": "Q3"}, "type": "ia.display.label", "props": {"text": "Q3", "style": {"color": "#d5dbe3", "fontSize": "13px", "fontWeight": "700", "marginRight": "4px"}}},
+              {"meta": {"name": "D3"}, "type": "ia.display.label", "position": {"basis": "12px", "shrink": 0}, "props": {"text": "", "style": {"backgroundColor": "#3ecf7a", "borderRadius": "999px", "height": "12px", "width": "12px", "marginRight": "8px"}}},
+              {"meta": {"name": "Q4"}, "type": "ia.display.label", "props": {"text": "Q4", "style": {"color": "#d5dbe3", "fontSize": "13px", "fontWeight": "700", "marginRight": "4px"}}},
+              {"meta": {"name": "D4"}, "type": "ia.display.label", "position": {"basis": "12px", "shrink": 0}, "props": {"text": "", "style": {"backgroundColor": "#e6c35a", "borderRadius": "999px", "height": "12px", "width": "12px"}}}
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

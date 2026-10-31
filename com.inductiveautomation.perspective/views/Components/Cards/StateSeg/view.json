@@ -1,0 +1,19 @@
+{
+  "custom": {},
+  "params": {"color": "#3ecf7a"},
+  "propConfig": {"params.color": {"paramDirection": "input", "persistent": true}},
+  "props": {"defaultSize": {"height": 14, "width": 40}},
+  "root": {
+    "meta": {"name": "root"},
+    "type": "ia.display.label",
+    "propConfig": {
+      "props.style.backgroundColor": {
+        "binding": {"config": {"path": "view.params.color"}, "type": "property"}
+      }
+    },
+    "props": {
+      "text": "",
+      "style": {"backgroundColor": "#3ecf7a", "height": "14px", "width": "100%"}
+    }
+  }
+}
