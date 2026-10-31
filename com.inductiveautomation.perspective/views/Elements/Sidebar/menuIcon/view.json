@@ -48,6 +48,14 @@
                   },
                   "type": "property"
                 }
+              },
+              "props.color": {
+                "binding": {
+                  "type": "expr",
+                  "config": {
+                    "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                  }
+                }
               }
             },
             "props": {

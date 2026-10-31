@@ -157,6 +157,7 @@
         },
         "props": {
           "selected": false,
+          "color": "#8eb4ff",
           "label": {
             "text": "",
             "position": "right"

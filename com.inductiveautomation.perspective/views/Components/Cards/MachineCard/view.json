@@ -701,7 +701,8 @@
             "props": {
               "style": {
                 "backgroundColor": "#ffffff",
-                "overflow": "hidden"
+                "overflow": "hidden",
+                "paddingLeft": "14px"
               },
               "wrap": "nowrap",
               "direction": "row",

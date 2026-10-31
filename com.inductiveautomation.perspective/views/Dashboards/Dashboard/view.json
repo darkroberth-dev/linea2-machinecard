@@ -43,7 +43,17 @@
                     "padding": "8px"
                   }
                 },
-                "type": "ia.display.icon"
+                "type": "ia.display.icon",
+                "propConfig": {
+                  "props.color": {
+                    "binding": {
+                      "type": "expr",
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                      }
+                    }
+                  }
+                }
               },
               {
                 "meta": {
