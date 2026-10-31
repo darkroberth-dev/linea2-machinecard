@@ -82,6 +82,14 @@
               },
               "type": "property"
             }
+          },
+          "props.style.color": {
+            "binding": {
+              "type": "expr",
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+              }
+            }
           }
         },
         "props": {
@@ -190,6 +198,24 @@
           },
           "scope": "G",
           "type": "script"
+        }
+      }
+    },
+    "propConfig": {
+      "props.style.backgroundColor": {
+        "binding": {
+          "type": "expr",
+          "config": {
+            "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+          }
+        }
+      },
+      "props.style.border": {
+        "binding": {
+          "type": "expr",
+          "config": {
+            "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+          }
         }
       }
     }
