@@ -1085,8 +1085,8 @@
           "name": "Timeline"
         },
         "position": {
-          "basis": "110px",
-          "shrink": 1,
+          "basis": "100px",
+          "shrink": 0,
           "grow": 0
         },
         "props": {
@@ -1105,7 +1105,7 @@
         },
         "type": "ia.container.flex",
         "position": {
-          "basis": "150px",
+          "basis": "160px",
           "shrink": 0,
           "grow": 0
         },
@@ -1116,8 +1116,8 @@
             "backgroundColor": "#ffffff",
             "borderTop": "1px solid #e6ebef",
             "padding": "8px 16px",
-            "gap": "16px",
-            "overflow": "hidden"
+            "gap": "12px",
+            "overflow": "visible"
           }
         },
         "children": [
@@ -1264,13 +1264,18 @@
             },
             "type": "ia.container.flex",
             "position": {
-              "basis": "220px",
+              "basis": "360px",
               "shrink": 0,
               "grow": 0
             },
             "props": {
-              "alignItems": "center",
-              "justify": "flex-end"
+              "direction": "column",
+              "alignItems": "stretch",
+              "justify": "center",
+              "style": {
+                "overflow": "visible",
+                "minWidth": "360px"
+              }
             },
             "children": [
               {
@@ -1295,25 +1300,26 @@
                   "alignContent": "flex-start",
                   "alignItems": "center",
                   "elementPosition": {
-                    "basis": "auto",
+                    "basis": "32px",
                     "grow": 0,
                     "shrink": 0
                   },
                   "elementStyle": {
                     "marginBottom": "4px",
-                    "marginRight": "8px"
+                    "width": "100%"
                   },
                   "path": "Components/Cards/ActionCard",
                   "style": {
                     "backgroundColor": "#ffffff",
-                    "overflow": "hidden",
-                    "width": "100%",
-                    "height": "100%"
+                    "overflow": "visible",
+                    "width": "100%"
                   },
                   "useDefaultViewHeight": false,
                   "useDefaultViewWidth": false,
-                  "wrap": "wrap",
-                  "justify": "flex-end"
+                  "direction": "column",
+                  "wrap": "nowrap",
+                  "alignItems": "stretch",
+                  "justify": "center"
                 },
                 "type": "ia.display.flex-repeater"
               }

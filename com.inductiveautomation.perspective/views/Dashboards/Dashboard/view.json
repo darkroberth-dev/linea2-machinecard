@@ -1223,7 +1223,7 @@
                       "alignContent": "flex-start",
                       "direction": "column",
                       "elementPosition": {
-                        "basis": "310px",
+                        "basis": "440px",
                         "grow": 0,
                         "shrink": 0
                       },
