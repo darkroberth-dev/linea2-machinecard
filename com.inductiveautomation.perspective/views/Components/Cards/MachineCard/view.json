@@ -507,7 +507,7 @@
                 "binding": {
                   "type": "expr",
                   "config": {
-                    "expression": "if({session.custom.darkMode}, \"rgba(255,255,255,0.035)\", \"#ffffff\")"
+                    "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
                   }
                 }
               },
@@ -714,7 +714,7 @@
                 "binding": {
                   "type": "expr",
                   "config": {
-                    "expression": "if({session.custom.darkMode}, \"rgba(255,255,255,0.035)\", \"#ffffff\")"
+                    "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
                   }
                 }
               },
@@ -1247,7 +1247,7 @@
                 "binding": {
                   "type": "expr",
                   "config": {
-                    "expression": "if({session.custom.darkMode}, \"rgba(255,255,255,0.035)\", \"#ffffff\")"
+                    "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
                   }
                 }
               },
