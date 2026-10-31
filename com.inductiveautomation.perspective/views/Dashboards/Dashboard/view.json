@@ -684,7 +684,17 @@
                               },
                               "text": 1
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#8eb8c0\", \"#5a8e96\")"
+                                  }
+                                }
+                              }
+                            }
                           },
                           {
                             "meta": {
@@ -701,7 +711,17 @@
                               },
                               "text": "LINEAS"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#8eb8c0\", \"#5a8e96\")"
+                                  }
+                                }
+                              }
+                            }
                           }
                         ],
                         "meta": {
@@ -718,13 +738,23 @@
                           "style": {
                             "backgroundColor": "#dff5f6",
                             "borderRadius": "16px",
-                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "box-shadow": "none",
                             "marginRight": "8px",
                             "minHeight": "72px",
                             "padding": "12px 14px"
                           }
                         },
-                        "type": "ia.container.flex"
+                        "type": "ia.container.flex",
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "type": "expr",
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#243034\", \"#f3f7f7\")"
+                              }
+                            }
+                          }
+                        }
                       },
                       {
                         "children": [
@@ -744,7 +774,17 @@
                               },
                               "text": 1
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#7eae90\", \"#4e8f68\")"
+                                  }
+                                }
+                              }
+                            }
                           },
                           {
                             "meta": {
@@ -761,7 +801,17 @@
                               },
                               "text": "PRODUCIENDO"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#7eae90\", \"#4e8f68\")"
+                                  }
+                                }
+                              }
+                            }
                           }
                         ],
                         "meta": {
@@ -778,13 +828,23 @@
                           "style": {
                             "backgroundColor": "#e5f6ec",
                             "borderRadius": "16px",
-                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "box-shadow": "none",
                             "marginRight": "8px",
                             "minHeight": "72px",
                             "padding": "12px 14px"
                           }
                         },
-                        "type": "ia.container.flex"
+                        "type": "ia.container.flex",
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "type": "expr",
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#24312b\", \"#f3f7f4\")"
+                              }
+                            }
+                          }
+                        }
                       },
                       {
                         "children": [
@@ -804,7 +864,17 @@
                               },
                               "text": 0
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#c2b07a\", \"#8d7848\")"
+                                  }
+                                }
+                              }
+                            }
                           },
                           {
                             "meta": {
@@ -821,7 +891,17 @@
                               },
                               "text": "DETENIDO"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#c2b07a\", \"#8d7848\")"
+                                  }
+                                }
+                              }
+                            }
                           }
                         ],
                         "meta": {
@@ -839,13 +919,23 @@
                           "style": {
                             "backgroundColor": "#faf4d6",
                             "borderRadius": "16px",
-                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "box-shadow": "none",
                             "marginRight": "8px",
                             "minHeight": "72px",
                             "padding": "12px 14px"
                           }
                         },
-                        "type": "ia.container.flex"
+                        "type": "ia.container.flex",
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "type": "expr",
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#322f26\", \"#f7f5ee\")"
+                              }
+                            }
+                          }
+                        }
                       },
                       {
                         "children": [
@@ -865,7 +955,17 @@
                               },
                               "text": "0"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#c48a8a\", \"#a86a6a\")"
+                                  }
+                                }
+                              }
+                            }
                           },
                           {
                             "meta": {
@@ -882,7 +982,17 @@
                               },
                               "text": "ALERTA"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#c48a8a\", \"#a86a6a\")"
+                                  }
+                                }
+                              }
+                            }
                           }
                         ],
                         "meta": {
@@ -899,13 +1009,23 @@
                           "style": {
                             "backgroundColor": "#fdecec",
                             "borderRadius": "16px",
-                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "box-shadow": "none",
                             "marginRight": "8px",
                             "minHeight": "72px",
                             "padding": "12px 14px"
                           }
                         },
-                        "type": "ia.container.flex"
+                        "type": "ia.container.flex",
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "type": "expr",
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#32282a\", \"#f7f3f3\")"
+                              }
+                            }
+                          }
+                        }
                       },
                       {
                         "children": [
@@ -925,7 +1045,17 @@
                               },
                               "text": 0
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#a3aab2\", \"#7a828b\")"
+                                  }
+                                }
+                              }
+                            }
                           },
                           {
                             "meta": {
@@ -942,7 +1072,17 @@
                               },
                               "text": "SIN DATOS"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#a3aab2\", \"#7a828b\")"
+                                  }
+                                }
+                              }
+                            }
                           }
                         ],
                         "meta": {
@@ -959,13 +1099,23 @@
                           "style": {
                             "backgroundColor": "#eef1f4",
                             "borderRadius": "16px",
-                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "box-shadow": "none",
                             "marginRight": "8px",
                             "minHeight": "72px",
                             "padding": "12px 14px"
                           }
                         },
-                        "type": "ia.container.flex"
+                        "type": "ia.container.flex",
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "type": "expr",
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#2c3138\", \"#f4f5f6\")"
+                              }
+                            }
+                          }
+                        }
                       },
                       {
                         "children": [
@@ -985,7 +1135,17 @@
                               },
                               "text": "0"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#95a9cc\", \"#6a80a8\")"
+                                  }
+                                }
+                              }
+                            }
                           },
                           {
                             "meta": {
@@ -1002,7 +1162,17 @@
                               },
                               "text": "FUERA DE TURNO"
                             },
-                            "type": "ia.display.label"
+                            "type": "ia.display.label",
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "type": "expr",
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#95a9cc\", \"#6a80a8\")"
+                                  }
+                                }
+                              }
+                            }
                           }
                         ],
                         "meta": {
@@ -1019,13 +1189,23 @@
                           "style": {
                             "backgroundColor": "#e7eefb",
                             "borderRadius": "16px",
-                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "box-shadow": "none",
                             "marginRight": "8px",
                             "minHeight": "72px",
                             "padding": "12px 14px"
                           }
                         },
-                        "type": "ia.container.flex"
+                        "type": "ia.container.flex",
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "type": "expr",
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#272c36\", \"#f3f5f9\")"
+                              }
+                            }
+                          }
+                        }
                       }
                     ],
                     "meta": {
