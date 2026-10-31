@@ -242,6 +242,41 @@
       {
         "children": [
           {
+            "meta": {
+              "name": "StateStripe"
+            },
+            "type": "ia.display.label",
+            "position": {
+              "basis": "4px",
+              "grow": 0,
+              "shrink": 0
+            },
+            "props": {
+              "text": "",
+              "style": {
+                "backgroundColor": "#e0b84a",
+                "width": "4px",
+                "height": "100%"
+              }
+            },
+            "propConfig": {
+              "props.style.backgroundColor": {
+                "binding": {
+                  "type": "property",
+                  "config": {
+                    "path": "view.params.stateText"
+                  },
+                  "transforms": [
+                    {
+                      "type": "script",
+                      "code": "\tt = '' if value is None else str(value).lower()\n\tif 'produc' in t:\n\t\treturn '#3cbe78'\n\tif 'sin datos' in t:\n\t\treturn '#9aa3ad'\n\treturn '#e0b84a'"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
             "children": [
               {
                 "meta": {
@@ -257,6 +292,14 @@
                         "path": "view.params.title"
                       },
                       "type": "property"
+                    }
+                  },
+                  "props.style.color": {
+                    "binding": {
+                      "type": "expr",
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                      }
                     }
                   }
                 },
@@ -432,19 +475,19 @@
         "propConfig": {
           "props.style.backgroundColor": {
             "binding": {
+              "type": "expr",
               "config": {
-                "path": "view.params.headerBg"
-              },
-              "type": "property"
+                "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+              }
             }
           }
         },
         "props": {
-          "alignItems": "center",
+          "alignItems": "stretch",
           "style": {
             "alignItems": "center",
             "overflow": "hidden",
-            "paddingLeft": "8px",
+            "paddingLeft": "0px",
             "paddingRight": "1px"
           },
           "wrap": "wrap"
