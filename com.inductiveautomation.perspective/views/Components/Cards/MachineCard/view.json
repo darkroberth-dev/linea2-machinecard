@@ -1305,14 +1305,6 @@
                           },
                           "type": "property"
                         }
-                      },
-                      "props.style.backgroundColor": {
-                        "binding": {
-                          "type": "expr",
-                          "config": {
-                            "expression": "transparent"
-                          }
-                        }
                       }
                     },
                     "props": {
@@ -1749,16 +1741,7 @@
                   }
                 },
                 "type": "ia.container.flex",
-                "propConfig": {
-                  "props.style.backgroundColor": {
-                    "binding": {
-                      "type": "expr",
-                      "config": {
-                        "expression": "transparent"
-                      }
-                    }
-                  }
-                }
+                "propConfig": {}
               }
             ],
             "meta": {
@@ -1775,22 +1758,6 @@
               }
             },
             "propConfig": {
-              "props.style.backgroundColor": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "transparent"
-                  }
-                }
-              },
-              "props.style.borderRadius": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "0px"
-                  }
-                }
-              },
               "props.style.margin": {
                 "binding": {
                   "type": "expr",
