@@ -1,0 +1,35 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {"defaultSize": {"height": 280, "width": 640}},
+  "root": {
+    "meta": {"name": "root"},
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "border": "1px solid #e6ebef",
+        "borderRadius": "16px",
+        "height": "100%",
+        "overflow": "hidden",
+        "padding": "16px",
+        "width": "100%"
+      }
+    },
+    "children": [
+      {"meta": {"name": "Title"}, "type": "ia.display.label", "props": {"text": "Paros del día", "style": {"color": "#1c2430", "fontSize": "16px", "fontWeight": "700"}}},
+      {"meta": {"name": "State"}, "type": "ia.display.label", "props": {"text": "Sin paro activo", "style": {"backgroundColor": "#e7eef1", "borderRadius": "999px", "color": "#5c6770", "fontSize": "12px", "fontWeight": "700", "marginTop": "10px", "padding": "4px 10px"}}},
+      {"meta": {"name": "R1"}, "type": "ia.display.label", "props": {"text": "Máquina carga en manual          69.4 min", "style": {"color": "#1c2430", "fontSize": "13px", "marginTop": "14px"}}},
+      {"meta": {"name": "B1"}, "type": "ia.display.label", "props": {"text": "", "style": {"backgroundColor": "#7aa6e0", "borderRadius": "4px", "height": "8px", "width": "92%"}}},
+      {"meta": {"name": "R2"}, "type": "ia.display.label", "props": {"text": "Espera material          18 min", "style": {"color": "#1c2430", "fontSize": "13px", "marginTop": "10px"}}},
+      {"meta": {"name": "B2"}, "type": "ia.display.label", "props": {"text": "", "style": {"backgroundColor": "#9ec3ee", "borderRadius": "4px", "height": "8px", "width": "36%"}}},
+      {"meta": {"name": "R3"}, "type": "ia.display.label", "props": {"text": "Ajuste          11 min", "style": {"color": "#1c2430", "fontSize": "13px", "marginTop": "10px"}}},
+      {"meta": {"name": "B3"}, "type": "ia.display.label", "props": {"text": "", "style": {"backgroundColor": "#9ec3ee", "borderRadius": "4px", "height": "8px", "width": "24%"}}},
+      {"meta": {"name": "R4"}, "type": "ia.display.label", "props": {"text": "Falla sensor          6 min", "style": {"color": "#1c2430", "fontSize": "13px", "marginTop": "10px"}}},
+      {"meta": {"name": "B4"}, "type": "ia.display.label", "props": {"text": "", "style": {"backgroundColor": "#c5daf3", "borderRadius": "4px", "height": "8px", "width": "14%"}}},
+      {"meta": {"name": "R5"}, "type": "ia.display.label", "props": {"text": "Otro          3 min", "style": {"color": "#1c2430", "fontSize": "13px", "marginTop": "10px"}}},
+      {"meta": {"name": "B5"}, "type": "ia.display.label", "props": {"text": "", "style": {"backgroundColor": "#c5daf3", "borderRadius": "4px", "height": "8px", "width": "8%"}}}
+    ]
+  }
+}
