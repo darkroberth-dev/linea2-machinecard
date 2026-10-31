@@ -117,7 +117,7 @@
                 "props": {
                   "alignVertical": "top",
                   "style": {
-                    "color": "#6d7782",
+                    "color": "#b7c0ca",
                     "fontSize": "11px",
                     "fontWeight": "600",
                     "textAlign": "center",
@@ -241,7 +241,7 @@
                     },
                     "props": {
                       "style": {
-                        "color": "#1b2430",
+                        "color": "#f2f4f7",
                         "fontSize": "18px",
                         "fontWeight": "700",
                         "textAlign": "center"
@@ -339,7 +339,7 @@
                 "props": {
                   "alignVertical": "top",
                   "style": {
-                    "color": "#6d7782",
+                    "color": "#b7c0ca",
                     "fontSize": "11px",
                     "fontWeight": "600",
                     "marginTop": 5,

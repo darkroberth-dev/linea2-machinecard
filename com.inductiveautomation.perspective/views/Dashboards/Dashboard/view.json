@@ -487,15 +487,14 @@
                       "name": "Sidebar"
                     },
                     "position": {
-                      "shrink": 0,
-                      "display": false
+                      "shrink": 0
                     },
                     "props": {
                       "path": "Components/Banners/leftSidebar/leftSidebar",
                       "style": {
                         "height": "100%",
                         "overflow": "hidden",
-                        "width": "0px"
+                        "width": "65px"
                       }
                     },
                     "type": "ia.display.view"
@@ -1226,42 +1225,2781 @@
                   },
                   {
                     "meta": {
-                      "name": "Realtime"
+                      "name": "Cards"
                     },
-                    "type": "ia.container.flex",
                     "position": {
                       "basis": "0px",
-                      "grow": 1,
-                      "shrink": 1
+                      "grow": 1
                     },
                     "props": {
+                      "alignContent": "flex-start",
                       "direction": "column",
+                      "elementPosition": {
+                        "basis": "340px",
+                        "grow": 0,
+                        "shrink": 0
+                      },
+                      "elementStyle": {
+                        "marginBottom": "12px",
+                        "width": "100%"
+                      },
+                      "instances": [
+                        {
+                          "actions": [
+                            {
+                              "badge": "1/9 pendiente",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "María Guzmán Muñoz"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Panel Metálico    ID: PM-1042"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 07:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:22:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:22:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 07:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:52:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:52:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 08:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:26:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 08:26:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:50:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 08:50:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:08:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 09:08:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 09:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:56:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 09:56:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:20:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 10:20:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:40:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 10:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 11:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 11:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 11:30:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 11:30:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:40:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:06:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 13:06:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "28%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "137",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "137",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "1h 13m",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "3h 11m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "47%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "María Guzmán Muñoz",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "12m | Detenida",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Prensa Plegadora *"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Andrés Paredes León"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Soporte Estampado    ID: ST-220"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:48:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 07:48:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:51:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:51:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 08:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:43:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 08:43:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 09:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:43:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 09:43:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:50:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 10:50:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:53:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 10:53:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:00:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:04:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:04:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:34:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:34:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:41:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:41:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "97%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 9m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "6",
+                              "text": "PAROS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "41%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.7 u/min",
+                              "text": "VELOCIDAD PROMEDIO"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "173",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "39%",
+                              "text": "OEE"
+                            }
+                          ],
+                          "operator": "Andrés Paredes León",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "37m | Produciendo",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Prensa de Estampado *"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Margarita Delgado Suárez"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Perfil PVC Ancho    ID: PVC-318"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:14:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:14:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "86%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "860",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "848",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "4h 10m",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 40m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "76%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "12",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "Margarita Delgado Suárez",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "1h 4m | Produciendo",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Extrusora de Perfiles"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Diego Salazar Ortiz"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Eje Templado    ID: EJ-088"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 11:18:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 11:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "94%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 18m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "3",
+                              "text": "PAROS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "82%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.3 u/min",
+                              "text": "VELOCIDAD PROMEDIO"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "96",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "76%",
+                              "text": "OEE"
+                            }
+                          ],
+                          "operator": "Diego Salazar Ortiz",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "2h 0m | Produciendo",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Torno CNC 02"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Valeria Núñez Prado"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Carcasa Aluminio    ID: CA-551"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:03:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 13:03:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "82%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 45m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "4",
+                              "text": "PAROS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "68%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.2 u/min",
+                              "text": "VELOCIDAD PROMEDIO"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "54",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "54%",
+                              "text": "OEE"
+                            }
+                          ],
+                          "operator": "Valeria Núñez Prado",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "15m | Produciendo",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Centro de Mecanizado"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Héctor Ibáñez Mora"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Soporte Láser    ID: SL-017"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:30:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:30:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "93%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "240",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "234",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "4h 40m",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 22m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "73%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "6",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "Héctor Ibáñez Mora",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "48m | Produciendo",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Soldadora Láser"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Paula Quintero Díaz"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Tapa Inyectada    ID: TI-330"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:09:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 13:09:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "91%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "1,100",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "1,072",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "5h 20m",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 30m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "88%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "28",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "Paula Quintero Díaz",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "9m | Produciendo",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Inyectora 250T"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "1/10 pendiente",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Rodrigo Campos Gil"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Placa 3 mm    ID: PL-003"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:52:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:52:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "60%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "410",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "405",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "3h 0m",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "2h 0m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "55%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "5",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "Rodrigo Campos Gil",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "26m | Detenida",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Guillotina Hidráulica"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Sin asignar"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Lote Curado    ID: LC-000"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#c5ced6",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "—",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "—",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "—",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "—",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "—",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "—",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "—",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "Sin asignar",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "1h 18m | Sin datos",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Horno de Curado"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Elena Vargas Pinto"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Disco Excéntrico    ID: DE-119"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:27:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:27:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "36%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "2h 40m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "5",
+                              "text": "PAROS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "38%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.8 u/min",
+                              "text": "VELOCIDAD PROMEDIO"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "88",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "13%",
+                              "text": "OEE"
+                            }
+                          ],
+                          "operator": "Elena Vargas Pinto",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "51m | Detenida",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Prensa Excéntrica"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "2/10 pendiente",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Mateo Herrera Solís"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Marco Pintado    ID: MP-640"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 13:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "74%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "300",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "285",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "3h 20m",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "1h 10m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "62%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "15",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "Mateo Herrera Solís",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "8m | Detenida",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Línea de Pintura"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Jimena Ortiz Beltrán"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Tubo Ø25    ID: TB-025"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 11:43:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 11:43:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "23%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "3h 20m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "6",
+                              "text": "PAROS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "33%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.5 u/min",
+                              "text": "VELOCIDAD PROMEDIO"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "140",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "8%",
+                              "text": "OEE"
+                            }
+                          ],
+                          "operator": "Jimena Ortiz Beltrán",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "1h 35m | Detenida",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Dobladora de Tubo"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Camila Rivas Soto"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Subensamble A    ID: SA-010"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:14:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 13:14:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "86%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "75",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "74",
+                              "text": "PRODUCTOS CORRECTOS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "4h 0m",
+                              "text": "TIEMPO EN PRODUCCIÓN"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 40m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "80%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "1",
+                              "text": "DEFECTOS"
+                            }
+                          ],
+                          "operator": "Camila Rivas Soto",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "4m | Detenida",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Celda de Ensamble"
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Iván Morales Ceballos"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Rodillo Rectificado    ID: RR-202"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:00:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 13:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#323842",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "26%",
+                              "text": "DISPONIBILIDAD"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "2h 20m",
+                              "text": "TIEMPO EN PARO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "4",
+                              "text": "PAROS"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "29%",
+                              "text": "RENDIMIENTO"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.2 u/min",
+                              "text": "VELOCIDAD PROMEDIO"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "40",
+                              "text": "PRODUCTOS TOTALES"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "8%",
+                              "text": "OEE"
+                            }
+                          ],
+                          "operator": "Iván Morales Ceballos",
+                          "pillFg": "#f2f4f7",
+                          "stateText": "18m | Detenida",
+                          "stopsText": "Anotar Paradas",
+                          "title": "Rectificadora"
+                        }
+                      ],
+                      "path": "Components/Cards/MachineCard",
                       "style": {
                         "height": "100%",
-                        "width": "100%",
-                        "overflow": "hidden"
-                      }
+                        "width": "100%"
+                      },
+                      "useDefaultViewHeight": false,
+                      "useDefaultViewWidth": false
                     },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "LineaCard"
-                        },
-                        "type": "ia.display.view",
-                        "position": {
-                          "grow": 1,
-                          "shrink": 1,
-                          "basis": "0px"
-                        },
-                        "props": {
-                          "path": "Components/Cards/MachineCard",
-                          "style": {
-                            "height": "100%",
-                            "width": "100%"
-                          }
-                        }
-                      }
-                    ]
+                    "type": "ia.display.flex-repeater"
                   }
                 ],
                 "meta": {
