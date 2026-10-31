@@ -290,7 +290,7 @@
             "height": "100%",
             "width": "100%",
             "overflow": "hidden",
-            "paddingBottom": "8px"
+            "paddingBottom": "0px"
           }
         },
         "children": [
@@ -518,14 +518,6 @@
                     "expression": "if({session.custom.darkMode}, \"10px\", \"0px\")"
                   }
                 }
-              },
-              "props.style.margin": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "if({session.custom.darkMode}, \"8px 10px 0px 10px\", \"0px\")"
-                  }
-                }
               }
             },
             "props": {
@@ -731,14 +723,6 @@
                   "type": "expr",
                   "config": {
                     "expression": "if({session.custom.darkMode}, \"10px\", \"0px\")"
-                  }
-                }
-              },
-              "props.style.margin": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "if({session.custom.darkMode}, \"8px 10px 0px 10px\", \"0px\")"
                   }
                 }
               }
@@ -1274,14 +1258,6 @@
                     "expression": "if({session.custom.darkMode}, \"10px\", \"0px\")"
                   }
                 }
-              },
-              "props.style.margin": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "if({session.custom.darkMode}, \"8px 10px 0px 10px\", \"0px\")"
-                  }
-                }
               }
             }
           },
@@ -1765,16 +1741,7 @@
                 "overflow": "hidden"
               }
             },
-            "propConfig": {
-              "props.style.margin": {
-                "binding": {
-                  "type": "expr",
-                  "config": {
-                    "expression": "if({session.custom.darkMode}, \"8px 10px 0px 10px\", \"0px\")"
-                  }
-                }
-              }
-            }
+            "propConfig": {}
           }
         ]
       }
