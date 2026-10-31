@@ -673,7 +673,7 @@
                   "name": "Rate"
                 },
                 "position": {
-                  "basis": "130px",
+                  "basis": "200px",
                   "grow": 0,
                   "shrink": 0
                 },

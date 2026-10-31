@@ -151,9 +151,20 @@
                           },
                           "type": "property"
                         }
+                      },
+                      "props.color": {
+                        "binding": {
+                          "type": "expr",
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#5c6b7a\")"
+                          }
+                        }
                       }
                     },
-                    "type": "ia.display.icon"
+                    "type": "ia.display.icon",
+                    "props": {
+                      "color": "#5c6b7a"
+                    }
                   }
                 ],
                 "meta": {
@@ -248,9 +259,20 @@
                           },
                           "type": "property"
                         }
+                      },
+                      "props.color": {
+                        "binding": {
+                          "type": "expr",
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#5c6b7a\")"
+                          }
+                        }
                       }
                     },
-                    "type": "ia.display.icon"
+                    "type": "ia.display.icon",
+                    "props": {
+                      "color": "#5c6b7a"
+                    }
                   }
                 ],
                 "meta": {
