@@ -1305,6 +1305,14 @@
                           },
                           "type": "property"
                         }
+                      },
+                      "props.style.backgroundColor": {
+                        "binding": {
+                          "type": "expr",
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                          }
+                        }
                       }
                     },
                     "props": {

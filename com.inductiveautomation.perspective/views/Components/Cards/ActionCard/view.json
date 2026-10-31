@@ -206,7 +206,7 @@
         "binding": {
           "type": "expr",
           "config": {
-            "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+            "expression": "if({session.custom.darkMode}, \"#343c48\", \"#ffffff\")"
           }
         }
       },
