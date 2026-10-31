@@ -1,0 +1,18 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "thumbnail.png",
+    "view.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Roberto",
+      "timestamp": "2026-10-30T21:43:02Z"
+    },
+    "lastModificationSignature": "229b66ba6ab96004e280ae1761131ea05b6d87cb5534d013645f4ba9d7e521a4",
+    "documentation": "Tarjeta de máquina. Su pie es un Flex Repeater de Action."
+  }
+}

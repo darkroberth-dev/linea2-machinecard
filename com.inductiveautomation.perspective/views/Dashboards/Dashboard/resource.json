@@ -1,0 +1,18 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "thumbnail.png",
+    "view.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Roberto",
+      "timestamp": "2026-10-30T21:07:00Z"
+    },
+    "lastModificationSignature": "6f36c71914e0e28a1a9f4f71c08df77fb72cda1be98bc68b42d465f88ede47a0",
+    "documentation": "Dashboard tiempo real. Flex Repeater de Card."
+  }
+}

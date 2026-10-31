@@ -1,0 +1,55 @@
+{
+  "custom": {},
+  "params": {"label": "06", "value": 28},
+  "propConfig": {
+    "params.label": {"paramDirection": "input", "persistent": true},
+    "params.value": {"paramDirection": "input", "persistent": true}
+  },
+  "props": {"defaultSize": {"height": 96, "width": 28}},
+  "root": {
+    "meta": {"name": "root"},
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "alignItems": "center",
+      "justify": "flex-end",
+      "style": {"height": "100%", "width": "100%"}
+    },
+    "children": [
+      {
+        "meta": {"name": "Bar"},
+        "type": "ia.display.label",
+        "position": {"shrink": 0, "grow": 0},
+        "propConfig": {
+          "props.style.height": {
+            "binding": {
+              "config": {"path": "view.params.value"},
+              "transforms": [{"code": "\ttry:\n\t\tn = int(float(value))\n\texcept:\n\t\tn = 0\n\tn = max(8, min(100, n))\n\treturn str(n) + '%'", "type": "script"}],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "text": "",
+          "style": {
+            "backgroundColor": "#9ec3ee",
+            "borderRadius": "3px 3px 0 0",
+            "height": "28%",
+            "width": "12px"
+          }
+        }
+      },
+      {
+        "meta": {"name": "Label"},
+        "type": "ia.display.label",
+        "propConfig": {
+          "props.text": {"binding": {"config": {"path": "view.params.label"}, "type": "property"}}
+        },
+        "props": {
+          "text": "06",
+          "style": {"color": "#6b7684", "fontSize": "10px", "marginTop": "4px", "textAlign": "center"}
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "custom": {},
+  "params": {
+    "instances": []
+  },
+  "propConfig": {
+    "params.instances": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 35
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "FlexRepeater"
+        },
+        "position": {
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.instances": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.instances"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "alignItems": "center",
+          "elementPosition": {
+            "basis": "",
+            "grow": 0,
+            "shrink": 0
+          },
+          "path": "Components/breadCrumb"
+        },
+        "type": "ia.display.flex-repeater"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 188,
+      "width": 190
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Icon"
+        },
+        "position": {
+          "basis": ""
+        },
+        "props": {
+          "path": "ignition/loading",
+          "style": {
+            "classes": "dot"
+          }
+        },
+        "type": "ia.display.icon"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

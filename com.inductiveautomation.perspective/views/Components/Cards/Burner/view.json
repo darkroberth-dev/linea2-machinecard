@@ -1,0 +1,73 @@
+{
+  "custom": {},
+  "params": {"name": "Q1", "status": true},
+  "propConfig": {
+    "params.name": {"paramDirection": "input", "persistent": true},
+    "params.status": {"paramDirection": "input", "persistent": true}
+  },
+  "props": {"defaultSize": {"height": 64, "width": 44}},
+  "root": {
+    "meta": {"name": "root"},
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "alignItems": "center",
+      "justify": "center",
+      "style": {"gap": "4px", "height": "100%", "width": "100%"}
+    },
+    "children": [
+      {
+        "meta": {"name": "Dot"},
+        "type": "ia.container.flex",
+        "position": {"basis": "36px", "shrink": 0, "grow": 0},
+        "propConfig": {
+          "props.style.backgroundColor": {
+            "binding": {
+              "config": {"path": "view.params.status"},
+              "transforms": [{"code": "\treturn '#3cbe78' if value else '#d5dde3'", "type": "script"}],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "center",
+          "style": {
+            "backgroundColor": "#3cbe78",
+            "borderRadius": "999px",
+            "height": "36px",
+            "width": "36px"
+          }
+        },
+        "children": [
+          {
+            "meta": {"name": "Check"},
+            "type": "ia.display.icon",
+            "position": {"basis": "18px", "shrink": 0},
+            "propConfig": {
+              "position.display": {
+                "binding": {
+                  "config": {"path": "view.params.status"},
+                  "transforms": [{"code": "\treturn bool(value)", "type": "script"}],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {"path": "material/check", "color": "#ffffff"}
+          }
+        ]
+      },
+      {
+        "meta": {"name": "Name"},
+        "type": "ia.display.label",
+        "propConfig": {
+          "props.text": {"binding": {"config": {"path": "view.params.name"}, "type": "property"}}
+        },
+        "props": {
+          "text": "Q1",
+          "style": {"color": "#6b7684", "fontSize": "11px", "fontWeight": "600", "textAlign": "center"}
+        }
+      }
+    ]
+  }
+}
