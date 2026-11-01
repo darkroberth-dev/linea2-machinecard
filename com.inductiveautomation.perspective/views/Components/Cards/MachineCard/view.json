@@ -630,7 +630,7 @@
                         "width": "16%"
                       },
                       "label": {
-                        "size": "18px",
+                        "size": "12px",
                         "units": "%"
                       },
                       "style": {
@@ -664,9 +664,9 @@
                   "shrink": 0
                 },
                 "props": {
-                  "alignItems": "center",
+                  "alignItems": "stretch",
                   "direction": "column",
-                  "justify": "center",
+                  "justify": "flex-start",
                   "style": {
                     "height": "100%",
                     "minWidth": "0px",
