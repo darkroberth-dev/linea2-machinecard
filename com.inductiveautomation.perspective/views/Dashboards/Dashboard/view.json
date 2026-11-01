@@ -1580,7 +1580,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1595,7 +1595,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1610,7 +1610,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1625,7 +1625,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1653,7 +1653,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1791,7 +1791,11 @@
                             {
                               "iconPathLeft": "material/qr_code_scanner",
                               "iconPathRigth": "",
-                              "instancePosition": {},
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
                               "instanceStyle": {
                                 "classes": ""
                               },
@@ -1802,7 +1806,11 @@
                             {
                               "iconPathLeft": "material/layers",
                               "iconPathRigth": "",
-                              "instancePosition": {},
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
                               "instanceStyle": {
                                 "classes": ""
                               },
@@ -1813,7 +1821,11 @@
                             {
                               "iconPathLeft": "material/access_time",
                               "iconPathRigth": "",
-                              "instancePosition": {},
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
                               "instanceStyle": {
                                 "classes": ""
                               },
@@ -1824,7 +1836,11 @@
                             {
                               "iconPathLeft": "ignition/heat_exchanger",
                               "iconPathRigth": "",
-                              "instancePosition": {},
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
                               "instanceStyle": {
                                 "classes": ""
                               },
@@ -1887,7 +1903,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1902,7 +1918,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1917,7 +1933,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1932,7 +1948,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -1961,7 +1977,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2187,7 +2203,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2202,7 +2218,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2217,7 +2233,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2232,7 +2248,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2261,7 +2277,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2421,7 +2437,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2436,7 +2452,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2451,7 +2467,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2466,7 +2482,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2495,7 +2511,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2655,7 +2671,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2670,7 +2686,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2685,7 +2701,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2700,7 +2716,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"
@@ -2729,7 +2745,7 @@
                               "instancePosition": {
                                 "basis": "auto",
                                 "grow": 0,
-                                "shrink": 0
+                                "shrink": 1
                               },
                               "instanceStyle": {
                                 "marginRight": "8px"

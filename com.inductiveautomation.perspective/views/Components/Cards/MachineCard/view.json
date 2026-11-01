@@ -566,7 +566,9 @@
                     },
                     "props": {
                       "elementPosition": {
-                        "basis": "0px"
+                        "basis": "0px",
+                        "grow": 1,
+                        "shrink": 1
                       },
                       "elementStyle": {
                         "borderRight": "2px solid rgba(255,255,255,0.22)",
@@ -591,9 +593,17 @@
                   "name": "FlexContainer"
                 },
                 "position": {
-                  "basis": "opx",
+                  "basis": "0px",
                   "grow": 1,
-                  "shrink": 0
+                  "shrink": 1
+                },
+                "props": {
+                  "style": {
+                    "height": "100%",
+                    "minWidth": "0px",
+                    "overflow": "hidden",
+                    "width": "100%"
+                  }
                 },
                 "type": "ia.container.flex"
               },
@@ -660,7 +670,8 @@
                   "name": "Rate"
                 },
                 "position": {
-                  "basis": "200px",
+                  "basis": "150px",
+                  "grow": 0,
                   "shrink": 0
                 },
                 "props": {
@@ -695,10 +706,13 @@
               }
             },
             "props": {
+              "direction": "row",
+              "wrap": "nowrap",
+              "alignItems": "stretch",
               "style": {
-                "overflow": "hidden"
-              },
-              "wrap": "wrap"
+                "overflow": "hidden",
+                "width": "100%"
+              }
             },
             "type": "ia.container.flex"
           },
@@ -1244,7 +1258,7 @@
                       "elementPosition": {
                         "basis": "auto",
                         "grow": 0,
-                        "shrink": 0
+                        "shrink": 1
                       },
                       "elementStyle": {
                         "marginBottom": "4px",
@@ -1252,9 +1266,8 @@
                       },
                       "path": "Components/Cards/ActionCard",
                       "style": {
-                        "borderTop": "1px solid #e6ebef",
                         "overflow": "hidden",
-                        "padding": "8px 12px",
+                        "padding": "8px 8px",
                         "width": "100%"
                       },
                       "useDefaultViewHeight": false,
@@ -1268,7 +1281,16 @@
                   "name": "FlexContainer"
                 },
                 "position": {
-                  "grow": 1
+                  "basis": "0px",
+                  "grow": 1,
+                  "shrink": 1
+                },
+                "props": {
+                  "style": {
+                    "minWidth": "0px",
+                    "overflow": "hidden",
+                    "width": "100%"
+                  }
                 },
                 "type": "ia.container.flex"
               },
@@ -1652,6 +1674,15 @@
             "position": {
               "basis": "20%",
               "shrink": 0
+            },
+            "props": {
+              "alignItems": "center",
+              "direction": "row",
+              "wrap": "nowrap",
+              "style": {
+                "overflow": "hidden",
+                "width": "100%"
+              }
             },
             "type": "ia.container.flex"
           }
