@@ -1,0 +1,128 @@
+{
+  "custom": {},
+  "params": {
+    "key": "",
+    "label": "Metrica",
+    "selected": false,
+    "source": "udt"
+  },
+  "propConfig": {
+    "params.key": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.label": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.selected": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.source": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 36,
+      "width": 400
+    }
+  },
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.flex",
+    "props": {
+      "alignItems": "center",
+      "style": {
+        "width": "100%"
+      }
+    },
+    "children": [
+      {
+        "meta": {
+          "name": "Check"
+        },
+        "type": "ia.input.checkbox",
+        "position": {
+          "basis": "28px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.selected": {
+            "binding": {
+              "type": "property",
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.selected"
+              }
+            }
+          }
+        },
+        "props": {
+          "selected": false
+        }
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "type": "ia.display.label",
+        "position": {
+          "grow": 1,
+          "basis": "0px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "type": "property",
+              "config": {
+                "path": "view.params.label"
+              }
+            }
+          }
+        },
+        "props": {
+          "text": "Metrica",
+          "style": {
+            "fontSize": "14px",
+            "marginLeft": "8px"
+          }
+        }
+      },
+      {
+        "meta": {
+          "name": "Kind"
+        },
+        "type": "ia.display.label",
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "type": "property",
+              "config": {
+                "path": "view.params.source"
+              },
+              "transforms": [
+                {
+                  "type": "script",
+                  "code": "\treturn 'UDT' if str(value) == 'udt' else 'DB'\n"
+                }
+              ]
+            }
+          }
+        },
+        "props": {
+          "text": "UDT",
+          "style": {
+            "color": "#6d7782",
+            "fontSize": "11px",
+            "fontWeight": "700"
+          }
+        }
+      }
+    ]
+  }
+}

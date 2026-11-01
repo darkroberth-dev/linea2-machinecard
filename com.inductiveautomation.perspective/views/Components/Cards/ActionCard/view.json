@@ -5,7 +5,13 @@
     "edit": false,
     "icon": "material/warning",
     "iconColor": "#c48a12",
-    "label": "Anotar Paradas"
+    "label": "Anotar Paradas",
+    "role": "",
+    "machineTitle": "",
+    "udtPath": "",
+    "machineId": "",
+    "database": "",
+    "selectedKeys": []
   },
   "propConfig": {
     "params.badge": {
@@ -22,6 +28,30 @@
     },
     "params.label": {
       "paramDirection": "inout"
+    },
+    "params.role": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.machineTitle": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.udtPath": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.machineId": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.database": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.selectedKeys": {
+      "paramDirection": "input",
+      "persistent": true
     }
   },
   "props": {
@@ -111,7 +141,7 @@
           "props.style.display": {
             "binding": {
               "config": {
-                "expression": "if({view.params.badge}\u003d\"\", \"none\", \"flex\")"
+                "expression": "if({view.params.badge}=\"\", \"none\", \"flex\")"
               },
               "type": "expr"
             }
@@ -172,7 +202,7 @@
       "dom": {
         "onClick": {
           "config": {
-            "script": "\tpopup.notification.info(\"Acción\", str(self.view.params.label), \"info\")\n"
+            "script": "\trole = str(self.view.params.role or '')\n\tif role == 'select-metrics':\n\t\tmetrics.service.open_selector(self)\n\telse:\n\t\tpopup.notification.info('Accion', str(self.view.params.label), 'info')\n"
           },
           "scope": "G",
           "type": "script"
