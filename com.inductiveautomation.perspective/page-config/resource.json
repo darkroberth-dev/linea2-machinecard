@@ -1,0 +1,17 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Roberto",
+      "timestamp": "2026-10-29T14:03:58Z"
+    },
+    "lastModificationSignature": "29c8ba801cf288009dbaaf15542fc2138a41c180eec9f3c436d2c63d91ec56f0",
+    "documentation": "Página de inicio."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "thumbnail.png",
+    "view.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Roberto",
+      "timestamp": "2026-10-29T13:20:41Z"
+    },
+    "lastModificationSignature": "cff80171217f9adc4df638dd99e80bdd3d93ecbf033f56ca9a2c7d486d48e85a",
+    "documentation": "Tarjeta de máquina usada por el Flex Repeater."
+  }
+}

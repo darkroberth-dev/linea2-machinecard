@@ -1,0 +1,251 @@
+{
+  "custom": {},
+  "params": {
+    "badge": "",
+    "edit": false,
+    "icon": "material/warning",
+    "iconColor": "#c48a12",
+    "label": "Anotar Paradas",
+    "role": "",
+    "machineTitle": "",
+    "udtPath": "",
+    "machineId": "",
+    "database": "",
+    "selectedKeys": []
+  },
+  "propConfig": {
+    "params.badge": {
+      "paramDirection": "inout"
+    },
+    "params.edit": {
+      "paramDirection": "inout"
+    },
+    "params.icon": {
+      "paramDirection": "inout"
+    },
+    "params.iconColor": {
+      "paramDirection": "inout"
+    },
+    "params.label": {
+      "paramDirection": "inout"
+    },
+    "params.role": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.machineTitle": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.udtPath": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.machineId": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.database": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.selectedKeys": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 36,
+      "width": 240
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Icon"
+        },
+        "position": {
+          "basis": "18px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.color": {
+            "binding": {
+              "config": {
+                "path": "view.params.iconColor"
+              },
+              "type": "property"
+            }
+          },
+          "props.path": {
+            "binding": {
+              "config": {
+                "path": "view.params.icon"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "height": "18px",
+            "marginRight": "8px",
+            "width": "18px"
+          }
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.style.color": {
+            "binding": {
+              "config": {
+                "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+              },
+              "type": "expr"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.label"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": "13px",
+            "fontWeight": "600"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Badge"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.style.display": {
+            "binding": {
+              "config": {
+                "expression": "if({view.params.badge}=\"\", \"none\", \"flex\")"
+              },
+              "type": "expr"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.badge"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#f8e7a8",
+            "borderRadius": "999px",
+            "color": "#8a6a10",
+            "fontSize": "12px",
+            "fontWeight": "700",
+            "marginLeft": "8px",
+            "padding": "2px 8px"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Edit"
+        },
+        "position": {
+          "basis": "16px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.style.display": {
+            "binding": {
+              "config": {
+                "expression": "if({view.params.edit}, \"flex\", \"none\")"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "color": "#6d7782",
+          "path": "material/edit",
+          "style": {
+            "height": "16px",
+            "marginLeft": "8px",
+            "width": "16px"
+          }
+        },
+        "type": "ia.display.icon"
+      }
+    ],
+    "events": {
+      "dom": {
+        "onClick": {
+          "config": {
+            "script": "\trole = str(self.view.params.role or '')\n\tif role == 'select-metrics':\n\t\tmetrics.ui.open_selector(self)\n\telse:\n\t\tpopup.notification.info('Accion', str(self.view.params.label), 'info')\n"
+          },
+          "scope": "G",
+          "type": "script"
+        }
+      }
+    },
+    "meta": {
+      "name": "root"
+    },
+    "position": {
+      "basis": "36px",
+      "grow": 0,
+      "shrink": 0
+    },
+    "propConfig": {
+      "props.style.backgroundColor": {
+        "binding": {
+          "config": {
+            "expression": "if({session.custom.darkMode}, \"#343c48\", \"#ffffff\")"
+          },
+          "type": "expr"
+        }
+      },
+      "props.style.border": {
+        "binding": {
+          "config": {
+            "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+          },
+          "type": "expr"
+        }
+      }
+    },
+    "props": {
+      "alignItems": "center",
+      "style": {
+        "borderRadius": "12px",
+        "box-shadow": "2px 1px 1px rgba(0,0,0,0.1)",
+        "classes": "lift",
+        "height": "100%",
+        "overflow": "hidden",
+        "padding": "6px 10px"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

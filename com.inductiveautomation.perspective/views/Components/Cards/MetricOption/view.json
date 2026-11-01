@@ -1,0 +1,70 @@
+{
+  "custom": {},
+  "params": {
+    "key": "",
+    "label": "Metrica",
+    "selected": false,
+    "source": "udt"
+  },
+  "propConfig": {
+    "params.key": {"paramDirection": "input", "persistent": true},
+    "params.label": {"paramDirection": "input", "persistent": true},
+    "params.selected": {"paramDirection": "inout", "persistent": true},
+    "params.source": {"paramDirection": "input", "persistent": true}
+  },
+  "props": {"defaultSize": {"height": 40, "width": 400}},
+  "root": {
+    "meta": {"name": "root"},
+    "type": "ia.container.flex",
+    "props": {"alignItems": "center", "style": {"height": "40px", "width": "100%"}},
+    "children": [
+      {
+        "meta": {"name": "Check"},
+        "type": "ia.input.checkbox",
+        "position": {"grow": 1, "basis": "0px"},
+        "propConfig": {
+          "props.selected": {
+            "binding": {
+              "type": "property",
+              "config": {"bidirectional": true, "path": "view.params.selected"}
+            }
+          },
+          "props.text": {
+            "binding": {"type": "property", "config": {"path": "view.params.label"}}
+          }
+        },
+        "props": {
+          "selected": false,
+          "text": "Metrica",
+          "style": {"fontSize": "14px", "width": "100%"}
+        },
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "type": "script",
+              "scope": "G",
+              "config": {
+                "script": "\tmetrics.ui.remember(self.session, self.view.params.key, bool(self.props.selected), self.view.params.selectedKeys)\n"
+              }
+            }
+          }
+        }
+      },
+      {
+        "meta": {"name": "Kind"},
+        "type": "ia.display.label",
+        "position": {"basis": "48px", "shrink": 0},
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "type": "property",
+              "config": {"path": "view.params.source"},
+              "transforms": [{"type": "script", "code": "\treturn 'UDT' if str(value) == 'udt' else 'DB'\n"}]
+            }
+          }
+        },
+        "props": {"text": "UDT", "style": {"color": "#6d7782", "fontSize": "11px", "fontWeight": "700"}}
+      }
+    ]
+  }
+}

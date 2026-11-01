@@ -1,0 +1,201 @@
+{
+  "custom": {},
+  "params": {
+    "database": "",
+    "machineId": "",
+    "machineTitle": "",
+    "options": [],
+    "selectedKeys": [],
+    "udtPath": ""
+  },
+  "propConfig": {
+    "params.database": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.machineId": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.machineTitle": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.options": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.selectedKeys": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.udtPath": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 560,
+      "width": 440
+    }
+  },
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "height": "100%",
+        "padding": "16px",
+        "width": "100%"
+      }
+    },
+    "children": [
+      {
+        "meta": {
+          "name": "Title"
+        },
+        "type": "ia.display.label",
+        "props": {
+          "text": "Metricas visibles",
+          "style": {
+            "color": "#1b2430",
+            "fontSize": "18px",
+            "fontWeight": "700"
+          }
+        }
+      },
+      {
+        "meta": {
+          "name": "Hint"
+        },
+        "type": "ia.display.label",
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "type": "property",
+              "config": {
+                "path": "view.params.machineTitle"
+              }
+            }
+          }
+        },
+        "props": {
+          "text": "",
+          "style": {
+            "color": "#6d7782",
+            "fontSize": "13px",
+            "marginBottom": "8px",
+            "marginTop": "4px"
+          }
+        }
+      },
+      {
+        "meta": {
+          "name": "Options"
+        },
+        "type": "ia.display.flex-repeater",
+        "position": {
+          "grow": 1,
+          "basis": "0px"
+        },
+        "propConfig": {
+          "props.instances": {
+            "binding": {
+              "type": "property",
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.options"
+              }
+            }
+          }
+        },
+        "props": {
+          "path": "Components/Cards/MetricOption",
+          "direction": "column",
+          "alignItems": "stretch",
+          "useDefaultViewHeight": false,
+          "useDefaultViewWidth": false,
+          "elementPosition": {
+            "basis": "40px",
+            "grow": 0,
+            "shrink": 0
+          },
+          "elementStyle": {
+            "width": "100%"
+          },
+          "style": {
+            "overflow": "auto",
+            "width": "100%"
+          }
+        }
+      },
+      {
+        "meta": {
+          "name": "Buttons"
+        },
+        "type": "ia.container.flex",
+        "position": {
+          "basis": "40px",
+          "shrink": 0
+        },
+        "props": {
+          "justify": "flex-end",
+          "alignItems": "center",
+          "style": {
+            "marginTop": "12px"
+          }
+        },
+        "children": [
+          {
+            "meta": {
+              "name": "Cancel"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Cancelar",
+              "style": {
+                "marginRight": "8px"
+              }
+            },
+            "events": {
+              "component": {
+                "onActionPerformed": {
+                  "type": "script",
+                  "scope": "G",
+                  "config": {
+                    "script": "\tsystem.perspective.closePopup('metricSelector')\n"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "meta": {
+              "name": "Apply"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Aplicar"
+            },
+            "events": {
+              "component": {
+                "onActionPerformed": {
+                  "type": "script",
+                  "scope": "G",
+                  "config": {
+                    "script": "\tself.session.custom.metricPatch = {\n\t\t'machineTitle': self.view.params.machineTitle,\n\t\t'selectedKeys': list(self.session.custom.metricDraftKeys or []),\n\t\t'context': {\n\t\t\t'machineId': self.view.params.machineId,\n\t\t\t'udtPath': self.view.params.udtPath,\n\t\t\t'database': self.view.params.database,\n\t\t\t'title': self.view.params.machineTitle,\n\t\t},\n\t}\n\ttry:\n\t\tnonce = int(self.session.custom.metricNonce)\n\texcept:\n\t\tnonce = 0\n\tself.session.custom.metricNonce = nonce + 1\n\tsystem.perspective.closePopup('metricSelector')\n"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

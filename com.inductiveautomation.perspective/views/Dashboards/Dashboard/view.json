@@ -1,0 +1,2976 @@
+{
+  "custom": {
+    "menuOpen": false
+  },
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.session.custom.menuOpen = not bool(self.session.custom.menuOpen)\n"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Menu"
+                },
+                "position": {
+                  "basis": "36px",
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.color": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "path": "material/menu",
+                  "style": {
+                    "classes": "lift",
+                    "marginRight": "4px",
+                    "padding": "8px"
+                  }
+                },
+                "type": "ia.display.icon"
+              },
+              {
+                "meta": {
+                  "name": "Brand"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.color": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "22px",
+                    "fontWeight": "800",
+                    "paddingLeft": "4px",
+                    "paddingRight": "16px"
+                  },
+                  "text": "Dashboard"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Rule"
+                },
+                "position": {
+                  "basis": "3px",
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.backgroundColor": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#3a414b\", \"#e6ebef\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "height": "28px",
+                    "width": "4px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "Title"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.color": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "600",
+                    "marginLeft": "16px"
+                  },
+                  "text": "ESMALTES"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "TopSpacer"
+                },
+                "position": {
+                  "basis": "0px",
+                  "grow": 1
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "TvI"
+                    },
+                    "position": {
+                      "basis": "18px",
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/tv",
+                      "style": {
+                        "height": "18px",
+                        "width": "18px"
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tpopup.notification.info(\"Versión TV\", \"Versión TV\", \"info\")\n"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Tv"
+                },
+                "position": {
+                  "basis": "40px",
+                  "display": false,
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.backgroundColor": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.style.border": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "alignItems": "center",
+                  "justify": "center",
+                  "style": {
+                    "borderRadius": "12px",
+                    "classes": "lift",
+                    "height": "40px",
+                    "marginLeft": "8px",
+                    "padding": "0 8px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "PlantI"
+                    },
+                    "position": {
+                      "basis": "18px",
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/domain",
+                      "style": {
+                        "height": "18px",
+                        "marginRight": 10,
+                        "width": "18px"
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  },
+                  {
+                    "meta": {
+                      "name": "plantLB"
+                    },
+                    "position": {
+                      "basis": "",
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.style.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "15px",
+                        "fontWeight": "800"
+                      },
+                      "text": "CHIHUAHUA"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "Plant"
+                },
+                "position": {
+                  "basis": "",
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.backgroundColor": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "alignItems": "center",
+                  "justify": "center",
+                  "style": {
+                    "borderRadius": "12px",
+                    "height": "40px",
+                    "marginLeft": "8px",
+                    "padding": "0 8px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "GroupI"
+                    },
+                    "position": {
+                      "basis": "18px",
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                          },
+                          "type": "expr"
+                        }
+                      },
+                      "props.style.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/grid_on",
+                      "style": {
+                        "height": "18px",
+                        "width": "18px"
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  },
+                  {
+                    "meta": {
+                      "name": "GroupN"
+                    },
+                    "position": {
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.style.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                          },
+                          "type": "expr"
+                        }
+                      },
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "path": "..../FlexContainer/FlexContainer_0/Cards.props.instances"
+                          },
+                          "transforms": [
+                            {
+                              "code": "\treturn len(value)",
+                              "type": "script"
+                            }
+                          ],
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "13px",
+                        "fontWeight": "700",
+                        "marginLeft": "6px"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tpopup.notification.info(\"1 Grupo de Máquinas\", \"1 Grupo de Máquinas\", \"info\")\n"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Group"
+                },
+                "position": {
+                  "basis": "64px",
+                  "display": false,
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.backgroundColor": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.style.border": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "alignItems": "center",
+                  "justify": "center",
+                  "style": {
+                    "borderRadius": "12px",
+                    "classes": "lift",
+                    "height": "40px",
+                    "marginLeft": "8px",
+                    "padding": "0 8px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "BellI"
+                    },
+                    "position": {
+                      "basis": "18px",
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/notifications_none",
+                      "style": {
+                        "height": "18px",
+                        "width": "18px"
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  },
+                  {
+                    "meta": {
+                      "name": "BellDot"
+                    },
+                    "position": {
+                      "shrink": 0
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#e23b3b",
+                        "borderRadius": "999px",
+                        "height": "8px",
+                        "marginLeft": "-10px",
+                        "marginTop": "-12px",
+                        "width": "8px"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tpopup.notification.info(\"Avisos\", \"Avisos\", \"info\")\n"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Bell"
+                },
+                "position": {
+                  "basis": "40px",
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.backgroundColor": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.style.border": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "alignItems": "center",
+                  "justify": "center",
+                  "style": {
+                    "borderRadius": "12px",
+                    "classes": "lift",
+                    "height": "40px",
+                    "marginLeft": "8px",
+                    "padding": "0 8px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Initials"
+                    },
+                    "position": {
+                      "shrink": 0
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#ffffff",
+                        "fontSize": "12px",
+                        "fontWeight": "700"
+                      },
+                      "text": "SV"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tpopup.notification.info(\"Perfil\", \"Perfil\", \"info\")\n"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Avatar"
+                },
+                "position": {
+                  "basis": "36px",
+                  "shrink": 0
+                },
+                "props": {
+                  "alignItems": "center",
+                  "justify": "center",
+                  "style": {
+                    "backgroundColor": "#1b2430",
+                    "borderRadius": "999px",
+                    "classes": "lift",
+                    "height": "36px",
+                    "marginLeft": "8px",
+                    "width": "36px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "LiveDot"
+                },
+                "position": {
+                  "display": false,
+                  "shrink": 0
+                },
+                "props": {
+                  "style": {
+                    "color": "#1b9a52",
+                    "fontSize": "10px",
+                    "marginLeft": "10px"
+                  },
+                  "text": "●"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Clock"
+                },
+                "position": {
+                  "display": false,
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.color": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "expression": "dateFormat(now(1000), \"h:mm:ss a\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "14px",
+                    "fontWeight": "600",
+                    "marginLeft": "6px"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "TopBar_0"
+            },
+            "position": {
+              "basis": "64px",
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.backgroundColor": {
+                "binding": {
+                  "config": {
+                    "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                  },
+                  "type": "expr"
+                }
+              },
+              "props.style.borderBottom": {
+                "binding": {
+                  "config": {
+                    "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "alignItems": "center",
+              "style": {
+                "margin": "0 -12px 12px -12px",
+                "padding": "0 12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Sidebar"
+                    },
+                    "position": {
+                      "shrink": 0
+                    },
+                    "props": {
+                      "path": "Components/Banners/leftSidebar/leftSidebar",
+                      "style": {
+                        "height": "100%",
+                        "overflow": "hidden",
+                        "width": "65px"
+                      }
+                    },
+                    "type": "ia.display.view"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "position.display": {
+                    "binding": {
+                      "config": {
+                        "expression": "{session.custom.menuOpen}"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "marginRight": 10,
+                    "overflow": "hidden"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Kpi0N"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "path": "..../Cards.props.instances"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "code": "\treturn len(value)",
+                                      "type": "script"
+                                    }
+                                  ],
+                                  "type": "property"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#0f8c98",
+                                "fontSize": "26px",
+                                "fontWeight": "700",
+                                "marginRight": "10px"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Kpi0L"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#0f8c98",
+                                "fontSize": "11px",
+                                "fontWeight": "700"
+                              },
+                              "text": "LINEAS"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "Kpi0"
+                        },
+                        "position": {
+                          "basis": "140px",
+                          "grow": 1,
+                          "shrink": 0
+                        },
+                        "props": {
+                          "alignItems": "flex-start",
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#dff5f6",
+                            "borderRadius": "16px",
+                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "marginRight": "8px",
+                            "minHeight": "72px",
+                            "padding": "12px 14px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Kpi1N"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#1b9a52",
+                                "fontSize": "26px",
+                                "fontWeight": "700",
+                                "marginRight": "10px"
+                              },
+                              "text": 1
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Kpi1L"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#1b9a52",
+                                "fontSize": "11px",
+                                "fontWeight": "700"
+                              },
+                              "text": "PRODUCIENDO"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "Kpi1"
+                        },
+                        "position": {
+                          "basis": "140px",
+                          "grow": 1,
+                          "shrink": 0
+                        },
+                        "props": {
+                          "alignItems": "flex-start",
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#e5f6ec",
+                            "borderRadius": "16px",
+                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "marginRight": "8px",
+                            "minHeight": "72px",
+                            "padding": "12px 14px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Kpi2N"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#9a7b12",
+                                "fontSize": "26px",
+                                "fontWeight": "700",
+                                "marginRight": "10px"
+                              },
+                              "text": 0
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Kpi2L"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#9a7b12",
+                                "fontSize": "11px",
+                                "fontWeight": "700"
+                              },
+                              "text": "DETENIDO"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "Kpi2"
+                        },
+                        "position": {
+                          "basis": "140px",
+                          "grow": 1,
+                          "shrink": 0
+                        },
+                        "props": {
+                          "alignItems": "flex-start",
+                          "direction": "column",
+                          "path": "Components/Cards/buttonCard",
+                          "style": {
+                            "backgroundColor": "#faf4d6",
+                            "borderRadius": "16px",
+                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "marginRight": "8px",
+                            "minHeight": "72px",
+                            "padding": "12px 14px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Kpi3N"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#d23b3b",
+                                "fontSize": "26px",
+                                "fontWeight": "700",
+                                "marginRight": "10px"
+                              },
+                              "text": "0"
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Kpi3L"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#d23b3b",
+                                "fontSize": "11px",
+                                "fontWeight": "700"
+                              },
+                              "text": "ALERTA"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "Kpi3"
+                        },
+                        "position": {
+                          "basis": "140px",
+                          "grow": 1,
+                          "shrink": 0
+                        },
+                        "props": {
+                          "alignItems": "flex-start",
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#fdecec",
+                            "borderRadius": "16px",
+                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "marginRight": "8px",
+                            "minHeight": "72px",
+                            "padding": "12px 14px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Kpi4N"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#66717c",
+                                "fontSize": "26px",
+                                "fontWeight": "700",
+                                "marginRight": "10px"
+                              },
+                              "text": 0
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Kpi4L"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#66717c",
+                                "fontSize": "11px",
+                                "fontWeight": "700"
+                              },
+                              "text": "SIN DATOS"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "Kpi4"
+                        },
+                        "position": {
+                          "basis": "140px",
+                          "grow": 1,
+                          "shrink": 0
+                        },
+                        "props": {
+                          "alignItems": "flex-start",
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#eef1f4",
+                            "borderRadius": "16px",
+                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "marginRight": "8px",
+                            "minHeight": "72px",
+                            "padding": "12px 14px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Kpi5N"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#3b6fd8",
+                                "fontSize": "26px",
+                                "fontWeight": "700",
+                                "marginRight": "10px"
+                              },
+                              "text": "0"
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Kpi5L"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#3b6fd8",
+                                "fontSize": "11px",
+                                "fontWeight": "700"
+                              },
+                              "text": "FUERA DE TURNO"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "Kpi5"
+                        },
+                        "position": {
+                          "basis": "140px",
+                          "grow": 1,
+                          "shrink": 0
+                        },
+                        "props": {
+                          "alignItems": "flex-start",
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#e7eefb",
+                            "borderRadius": "16px",
+                            "box-shadow": "1px 1px 1px rgba(0,0,0,0.1)",
+                            "marginRight": "8px",
+                            "minHeight": "72px",
+                            "padding": "12px 14px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "Kpis"
+                    },
+                    "position": {
+                      "basis": "84px",
+                      "shrink": 0
+                    },
+                    "props": {
+                      "style": {
+                        "marginBottom": "12px"
+                      },
+                      "wrap": "wrap"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "SortI"
+                            },
+                            "position": {
+                              "basis": "16px",
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.color": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "path": "material/swap_vert",
+                              "style": {
+                                "height": "16px",
+                                "marginRight": "6px",
+                                "width": "16px"
+                              }
+                            },
+                            "type": "ia.display.icon"
+                          },
+                          {
+                            "meta": {
+                              "name": "SortL"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "fontSize": "13px",
+                                "fontWeight": "600"
+                              },
+                              "text": "Ordenar por"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "events": {
+                          "dom": {
+                            "onClick": {
+                              "config": {
+                                "script": "\tpopup.notification.info(\"Ordenar por\", \"Ordenar por\", \"info\")\n"
+                              },
+                              "scope": "G",
+                              "type": "script"
+                            }
+                          }
+                        },
+                        "meta": {
+                          "name": "Sort"
+                        },
+                        "position": {
+                          "shrink": 0
+                        },
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "props.style.border": {
+                            "binding": {
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "alignItems": "center",
+                          "style": {
+                            "borderRadius": "12px",
+                            "classes": "lift",
+                            "marginLeft": "8px",
+                            "padding": "6px 12px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "FilterI"
+                            },
+                            "position": {
+                              "basis": "16px",
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.color": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "path": "material/filter_alt",
+                              "style": {
+                                "height": "16px",
+                                "marginRight": "6px",
+                                "width": "16px"
+                              }
+                            },
+                            "type": "ia.display.icon"
+                          },
+                          {
+                            "meta": {
+                              "name": "FilterL"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "fontSize": "13px",
+                                "fontWeight": "600"
+                              },
+                              "text": "Filtrar"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "events": {
+                          "dom": {
+                            "onClick": {
+                              "config": {
+                                "script": "\tpopup.notification.info(\"Filtrar\", \"Filtrar\", \"info\")\n"
+                              },
+                              "scope": "G",
+                              "type": "script"
+                            }
+                          }
+                        },
+                        "meta": {
+                          "name": "Filter"
+                        },
+                        "position": {
+                          "shrink": 0
+                        },
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "props.style.border": {
+                            "binding": {
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "alignItems": "center",
+                          "style": {
+                            "borderRadius": "12px",
+                            "classes": "lift",
+                            "marginLeft": "8px",
+                            "padding": "6px 12px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "meta": {
+                          "name": "ToolSpacer"
+                        },
+                        "position": {
+                          "basis": "0px",
+                          "grow": 1
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "HistoryI"
+                            },
+                            "position": {
+                              "basis": "16px",
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.color": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "path": "material/history",
+                              "style": {
+                                "height": "16px",
+                                "marginRight": "6px",
+                                "width": "16px"
+                              }
+                            },
+                            "type": "ia.display.icon"
+                          },
+                          {
+                            "meta": {
+                              "name": "HistoryL"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "fontSize": "13px",
+                                "fontWeight": "600"
+                              },
+                              "text": "Turnos Históricos"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "events": {
+                          "dom": {
+                            "onClick": {
+                              "config": {
+                                "script": "\tpopup.notification.info(\"Turnos Históricos\", \"Turnos Históricos\", \"info\")\n"
+                              },
+                              "scope": "G",
+                              "type": "script"
+                            }
+                          }
+                        },
+                        "meta": {
+                          "name": "History"
+                        },
+                        "position": {
+                          "shrink": 0
+                        },
+                        "propConfig": {
+                          "props.style.backgroundColor": {
+                            "binding": {
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "props.style.border": {
+                            "binding": {
+                              "config": {
+                                "expression": "if({session.custom.darkMode}, \"1px solid #3a414b\", \"1px solid #e6ebef\")"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "alignItems": "center",
+                          "style": {
+                            "borderRadius": "12px",
+                            "classes": "lift",
+                            "marginLeft": "8px",
+                            "padding": "6px 12px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "TourI"
+                            },
+                            "position": {
+                              "basis": "16px",
+                              "shrink": 0
+                            },
+                            "propConfig": {
+                              "props.color": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "path": "material/explore",
+                              "style": {
+                                "height": "16px",
+                                "marginRight": "6px",
+                                "width": "16px"
+                              }
+                            },
+                            "type": "ia.display.icon"
+                          },
+                          {
+                            "meta": {
+                              "name": "TourL"
+                            },
+                            "position": {
+                              "shrink": 0
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#1b2430",
+                                "fontSize": "13px",
+                                "fontWeight": "600"
+                              },
+                              "text": "Tour Rápido"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "events": {
+                          "dom": {
+                            "onClick": {
+                              "config": {
+                                "script": "\tpopup.notification.info(\"Tour Rápido\", \"Tour Rápido\", \"info\")\n"
+                              },
+                              "scope": "G",
+                              "type": "script"
+                            }
+                          }
+                        },
+                        "meta": {
+                          "name": "Tour"
+                        },
+                        "position": {
+                          "display": false,
+                          "shrink": 0
+                        },
+                        "props": {
+                          "alignItems": "center",
+                          "style": {
+                            "backgroundColor": "#ffffff",
+                            "border": "1px solid #e6ebef",
+                            "borderRadius": "12px",
+                            "classes": "lift",
+                            "marginLeft": "8px",
+                            "padding": "6px 12px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "Toolbar"
+                    },
+                    "position": {
+                      "basis": "48px",
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.style.backgroundColor": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#2a3038\", \"#ffffff\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "alignItems": "center",
+                      "style": {
+                        "borderRadius": "16px",
+                        "marginBottom": "12px"
+                      },
+                      "wrap": "wrap"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "Cards"
+                    },
+                    "position": {
+                      "basis": "0px",
+                      "grow": 1
+                    },
+                    "props": {
+                      "alignContent": "flex-start",
+                      "direction": "column",
+                      "elementPosition": {
+                        "basis": "310px",
+                        "grow": 0,
+                        "shrink": 0
+                      },
+                      "elementStyle": {
+                        "marginBottom": "12px",
+                        "width": "100%"
+                      },
+                      "instances": [
+                        {
+                          "actions": [
+                            {
+                              "badge": "1/9 pendiente",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "María Guzmán Muñoz"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Panel Metálico    ID: PM-1042"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/tune",
+                              "iconColor": "#3d6ad6",
+                              "role": "select-metrics",
+                              "machineTitle": "LINEA 1  MONITOREO",
+                              "udtPath": "[default]Lineas/Linea1",
+                              "machineId": 1,
+                              "database": "",
+                              "selectedKeys": [
+                                "sku",
+                                "clr",
+                                "lastState",
+                                "dryerTemp",
+                                "availability",
+                                "downtime"
+                              ],
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Metricas"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 07:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:22:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:22:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 07:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:52:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:52:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 08:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:26:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 08:26:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:50:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 08:50:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:08:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 09:08:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 09:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:56:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 09:56:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:20:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 10:20:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:40:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 10:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 11:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 11:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 11:30:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 11:30:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:10:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:10:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:40:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:06:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 13:06:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#fff6d8",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "material/qr_code_scanner",
+                              "iconPathRigth": "",
+                              "instancePosition": {},
+                              "instanceStyle": {
+                                "classes": ""
+                              },
+                              "percent": "ZDM2",
+                              "text": "SKU",
+                              "key": "sku"
+                            },
+                            {
+                              "iconPathLeft": "material/layers",
+                              "iconPathRigth": "",
+                              "instancePosition": {},
+                              "instanceStyle": {
+                                "classes": ""
+                              },
+                              "percent": 54,
+                              "text": "CLR",
+                              "key": "clr"
+                            },
+                            {
+                              "iconPathLeft": "material/access_time",
+                              "iconPathRigth": "",
+                              "instancePosition": {},
+                              "instanceStyle": {
+                                "classes": ""
+                              },
+                              "percent": 252.54,
+                              "text": "Ultimo estado",
+                              "key": "lastState"
+                            },
+                            {
+                              "iconPathLeft": "ignition/heat_exchanger",
+                              "iconPathRigth": "",
+                              "instancePosition": {},
+                              "instanceStyle": {
+                                "classes": ""
+                              },
+                              "percent": "40 °C",
+                              "text": "Piezas salida secador",
+                              "key": "dryerTemp"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "94%",
+                              "text": "DISPONIBILIDAD",
+                              "key": "availability"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 40m",
+                              "text": "TIEMPO EN PARO",
+                              "key": "downtime"
+                            }
+                          ],
+                          "operator": "María Guzmán Muñoz",
+                          "pillFg": "#8a6a10",
+                          "stateText": "Detenida",
+                          "stateTime": 250.5,
+                          "stopsText": "Anotar Paradas",
+                          "title": "LINEA 1  MONITOREO",
+                          "selectedKeys": [
+                            "sku",
+                            "clr",
+                            "lastState",
+                            "dryerTemp",
+                            "availability",
+                            "downtime"
+                          ],
+                          "udtPath": "[default]Lineas/Linea1",
+                          "machineId": 1,
+                          "database": ""
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Andrés Paredes León"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Soporte Estampado    ID: ST-220"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/tune",
+                              "iconColor": "#3d6ad6",
+                              "role": "select-metrics",
+                              "machineTitle": "LINEA 2 MONITOREO",
+                              "udtPath": "[default]Lineas/Linea2",
+                              "machineId": 2,
+                              "database": "",
+                              "selectedKeys": [
+                                "availability",
+                                "downtime",
+                                "stops",
+                                "performance",
+                                "speed",
+                                "total",
+                                "oee"
+                              ],
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Metricas"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:48:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 07:48:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 07:51:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:51:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 08:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 08:43:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 08:43:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:40:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 09:40:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 09:43:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 09:43:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:50:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 10:50:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 10:53:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 10:53:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:00:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:04:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:04:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:34:00"
+                            },
+                            {
+                              "color": "#f0c94a",
+                              "fromDate": "2026-10-29 12:34:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:41:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:41:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#e7f7ef",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "97%",
+                              "text": "DISPONIBILIDAD",
+                              "key": "availability"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 9m",
+                              "text": "TIEMPO EN PARO",
+                              "key": "downtime"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "6",
+                              "text": "PAROS",
+                              "key": "stops"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "41%",
+                              "text": "RENDIMIENTO",
+                              "key": "performance"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.7 u/min",
+                              "text": "VELOCIDAD PROMEDIO",
+                              "key": "speed"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "173",
+                              "text": "PRODUCTOS TOTALES",
+                              "key": "total"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "39%",
+                              "text": "OEE",
+                              "key": "oee"
+                            }
+                          ],
+                          "operator": "Andrés Paredes León",
+                          "pillFg": "#1b9a52",
+                          "stateText": "Produciendo",
+                          "stateTime": 250.5,
+                          "stopsText": "Anotar Paradas",
+                          "title": "LINEA 2 MONITOREO",
+                          "selectedKeys": [
+                            "availability",
+                            "downtime",
+                            "stops",
+                            "performance",
+                            "speed",
+                            "total",
+                            "oee"
+                          ],
+                          "udtPath": "[default]Lineas/Linea2",
+                          "machineId": 2,
+                          "database": ""
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Margarita Delgado Suárez"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Perfil PVC Ancho    ID: PVC-318"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/tune",
+                              "iconColor": "#3d6ad6",
+                              "role": "select-metrics",
+                              "machineTitle": "LINEA 3  MONITOREO",
+                              "udtPath": "[default]Lineas/Linea3",
+                              "machineId": 3,
+                              "database": "",
+                              "selectedKeys": [
+                                "availability",
+                                "total",
+                                "good",
+                                "runTime",
+                                "downtime",
+                                "performance",
+                                "defects"
+                              ],
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Metricas"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 12:14:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 12:14:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#e7f7ef",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "86%",
+                              "text": "DISPONIBILIDAD",
+                              "key": "availability"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "860",
+                              "text": "PRODUCTOS TOTALES",
+                              "key": "total"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "848",
+                              "text": "PRODUCTOS CORRECTOS",
+                              "key": "good"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "4h 10m",
+                              "text": "TIEMPO EN PRODUCCIÓN",
+                              "key": "runTime"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 40m",
+                              "text": "TIEMPO EN PARO",
+                              "key": "downtime"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "76%",
+                              "text": "RENDIMIENTO",
+                              "key": "performance"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "12",
+                              "text": "DEFECTOS",
+                              "key": "defects"
+                            }
+                          ],
+                          "operator": "Margarita Delgado Suárez",
+                          "pillFg": "#1b9a52",
+                          "stateText": "Produciendo",
+                          "stateTime": 250.5,
+                          "stopsText": "Anotar Paradas",
+                          "title": "LINEA 3  MONITOREO",
+                          "selectedKeys": [
+                            "availability",
+                            "total",
+                            "good",
+                            "runTime",
+                            "downtime",
+                            "performance",
+                            "defects"
+                          ],
+                          "udtPath": "[default]Lineas/Linea3",
+                          "machineId": 3,
+                          "database": ""
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Diego Salazar Ortiz"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Eje Templado    ID: EJ-088"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/tune",
+                              "iconColor": "#3d6ad6",
+                              "role": "select-metrics",
+                              "machineTitle": "LINEA 4  MONITOREO",
+                              "udtPath": "[default]Lineas/Linea4",
+                              "machineId": 4,
+                              "database": "",
+                              "selectedKeys": [
+                                "availability",
+                                "downtime",
+                                "stops",
+                                "performance",
+                                "speed",
+                                "total",
+                                "oee"
+                              ],
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Metricas"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 11:18:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 11:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#e7f7ef",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "94%",
+                              "text": "DISPONIBILIDAD",
+                              "key": "availability"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 18m",
+                              "text": "TIEMPO EN PARO",
+                              "key": "downtime"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "3",
+                              "text": "PAROS",
+                              "key": "stops"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "82%",
+                              "text": "RENDIMIENTO",
+                              "key": "performance"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.3 u/min",
+                              "text": "VELOCIDAD PROMEDIO",
+                              "key": "speed"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "96",
+                              "text": "PRODUCTOS TOTALES",
+                              "key": "total"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "76%",
+                              "text": "OEE",
+                              "key": "oee"
+                            }
+                          ],
+                          "operator": "Diego Salazar Ortiz",
+                          "pillFg": "#1b9a52",
+                          "stateText": "Produciendo",
+                          "stateTime": 250.5,
+                          "stopsText": "Anotar Paradas",
+                          "title": "LINEA 4  MONITOREO",
+                          "selectedKeys": [
+                            "availability",
+                            "downtime",
+                            "stops",
+                            "performance",
+                            "speed",
+                            "total",
+                            "oee"
+                          ],
+                          "udtPath": "[default]Lineas/Linea4",
+                          "machineId": 4,
+                          "database": ""
+                        },
+                        {
+                          "actions": [
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/warning",
+                              "iconColor": "#c48a12",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Anotar Paradas"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/person",
+                              "iconColor": "#5c6b7a",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Valeria Núñez Prado"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/widgets",
+                              "iconColor": "#1aa3a8",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Carcasa Aluminio    ID: CA-551"
+                            },
+                            {
+                              "badge": "",
+                              "edit": true,
+                              "icon": "material/report_problem",
+                              "iconColor": "#b15ad1",
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Agregar Defectos"
+                            },
+                            {
+                              "badge": "",
+                              "edit": false,
+                              "icon": "material/tune",
+                              "iconColor": "#3d6ad6",
+                              "role": "select-metrics",
+                              "machineTitle": "LINEA 5  MONITOREO",
+                              "udtPath": "[default]Lineas/Linea5",
+                              "machineId": 5,
+                              "database": "",
+                              "selectedKeys": [
+                                "availability",
+                                "downtime",
+                                "stops",
+                                "performance",
+                                "speed",
+                                "total",
+                                "oee"
+                              ],
+                              "instancePosition": {
+                                "basis": "auto",
+                                "grow": 0,
+                                "shrink": 0
+                              },
+                              "instanceStyle": {
+                                "marginRight": "8px"
+                              },
+                              "label": "Metricas"
+                            }
+                          ],
+                          "chart": [
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 07:00:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:03:00"
+                            },
+                            {
+                              "color": "#3cbe78",
+                              "fromDate": "2026-10-29 13:03:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 13:18:00"
+                            },
+                            {
+                              "color": "#e7eef1",
+                              "fromDate": "2026-10-29 13:18:00",
+                              "name": "turno",
+                              "toDate": "2026-10-29 19:00:00"
+                            }
+                          ],
+                          "headerBg": "#e7f7ef",
+                          "instancePosition": {
+                            "basis": "310px",
+                            "grow": 0,
+                            "shrink": 0
+                          },
+                          "instanceStyle": {
+                            "marginBottom": "12px",
+                            "width": "100%"
+                          },
+                          "metrics": [
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "82%",
+                              "text": "DISPONIBILIDAD",
+                              "key": "availability"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0h 45m",
+                              "text": "TIEMPO EN PARO",
+                              "key": "downtime"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "4",
+                              "text": "PAROS",
+                              "key": "stops"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "68%",
+                              "text": "RENDIMIENTO",
+                              "key": "performance"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "0.2 u/min",
+                              "text": "VELOCIDAD PROMEDIO",
+                              "key": "speed"
+                            },
+                            {
+                              "iconPathLeft": "material/category",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "54",
+                              "text": "PRODUCTOS TOTALES",
+                              "key": "total"
+                            },
+                            {
+                              "iconPathLeft": "",
+                              "iconPathRigth": "material/show_chart",
+                              "instancePosition": {
+                                "basis": "0px",
+                                "grow": 1,
+                                "shrink": 1
+                              },
+                              "instanceStyle": {},
+                              "percent": "54%",
+                              "text": "OEE",
+                              "key": "oee"
+                            }
+                          ],
+                          "operator": "Valeria Núñez Prado",
+                          "pillFg": "#1b9a52",
+                          "stateText": "Produciendo",
+                          "stateTime": 250.5,
+                          "stopsText": "Anotar Paradas",
+                          "title": "LINEA 5  MONITOREO",
+                          "selectedKeys": [
+                            "availability",
+                            "downtime",
+                            "stops",
+                            "performance",
+                            "speed",
+                            "total",
+                            "oee"
+                          ],
+                          "udtPath": "[default]Lineas/Linea5",
+                          "machineId": 5,
+                          "database": ""
+                        }
+                      ],
+                      "path": "Components/Cards/MachineCard",
+                      "style": {
+                        "height": "100%",
+                        "width": "100%"
+                      },
+                      "useDefaultViewHeight": false,
+                      "useDefaultViewWidth": false
+                    },
+                    "type": "ia.display.flex-repeater"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "grow": 1,
+              "shrink": 0
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "Main"
+        },
+        "position": {
+          "basis": "0px",
+          "grow": 1
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "height": "100%",
+            "overflow": "hidden",
+            "padding": "0 12px 12px 12px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "position": {
+      "basis": "auto",
+      "grow": 0,
+      "shrink": 0
+    },
+    "propConfig": {
+      "props.style.backgroundColor": {
+        "binding": {
+          "config": {
+            "expression": "if({session.custom.darkMode}, \"#1b1f26\", \"#f3f6f7\")"
+          },
+          "type": "expr"
+        }
+      },
+      "custom.metricNonce": {
+        "binding": {
+          "type": "property",
+          "config": {
+            "path": "session.custom.metricNonce"
+          }
+        },
+        "onChange": {
+          "enabled": null,
+          "script": "\tpatch = self.session.custom.metricPatch\n\tif not patch:\n\t\treturn\n\tcards = self.getChild('Main').getChild('FlexContainer').getChild('FlexContainer_0').getChild('Cards')\n\tmetrics.service.patch_repeater(cards, patch.get('machineTitle'), patch.get('selectedKeys'), patch.get('context') or {})\n"
+        }
+      }
+    },
+    "props": {
+      "style": {
+        "height": "100%",
+        "overflow": "hidden",
+        "padding": "0px"
+      }
+    },
+    "type": "ia.container.flex",
+    "custom": {
+      "metricNonce": 0
+    }
+  }
+}

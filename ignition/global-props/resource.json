@@ -1,0 +1,16 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Roberto",
+      "timestamp": "2026-10-26T12:38:50Z"
+    },
+    "lastModificationSignature": "da1d911285d15146dcb1350086e4c32245c0ed0c39fbb3b1aa547ea7c63c66a4"
+  }
+}
