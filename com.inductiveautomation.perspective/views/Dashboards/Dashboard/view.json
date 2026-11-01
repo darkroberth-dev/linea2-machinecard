@@ -2947,6 +2947,18 @@
           },
           "type": "expr"
         }
+      },
+      "custom.metricNonce": {
+        "binding": {
+          "type": "property",
+          "config": {
+            "path": "session.custom.metricNonce"
+          }
+        },
+        "onChange": {
+          "enabled": null,
+          "script": "\tpatch = self.session.custom.metricPatch\n\tif not patch:\n\t\treturn\n\tcards = self.getChild('Main').getChild('FlexContainer').getChild('FlexContainer_0').getChild('Cards')\n\tmetrics.service.patch_repeater(cards, patch.get('machineTitle'), patch.get('selectedKeys'), patch.get('context') or {})\n"
+        }
       }
     },
     "props": {
@@ -2957,17 +2969,8 @@
       }
     },
     "type": "ia.container.flex",
-    "events": {
-      "message": {
-        "metricApply": {
-          "type": "script",
-          "scope": "page",
-          "config": {
-            "messageType": "metricApply",
-            "script": "\tcards = self.getChild('Main').getChild('FlexContainer').getChild('FlexContainer_0').getChild('Cards')\n\tmetrics.service.patch_repeater(cards, payload.get('machineTitle'), payload.get('selectedKeys'), payload.get('context') or {})\n"
-          }
-        }
-      }
+    "custom": {
+      "metricNonce": 0
     }
   }
 }

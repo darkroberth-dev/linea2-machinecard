@@ -54,18 +54,6 @@
         "width": "100%"
       }
     },
-    "events": {
-      "message": {
-        "metricToggle": {
-          "type": "script",
-          "scope": "page",
-          "config": {
-            "messageType": "metricToggle",
-            "script": "\tself.view.params.options = metrics.ui.toggle(self.view.params.options, payload.get('key'), payload.get('selected'))\n"
-          }
-        }
-      }
-    },
     "children": [
       {
         "meta": {
@@ -192,8 +180,7 @@
             },
             "type": "ia.input.button",
             "props": {
-              "text": "Aplicar",
-              "primary": true
+              "text": "Aplicar"
             },
             "events": {
               "component": {
@@ -201,7 +188,7 @@
                   "type": "script",
                   "scope": "G",
                   "config": {
-                    "script": "\tsystem.perspective.sendMessage('metricApply', {\n\t\t'machineTitle': self.view.params.machineTitle,\n\t\t'selectedKeys': metrics.service.selected_keys(self.view.params.options),\n\t\t'context': {\n\t\t\t'machineId': self.view.params.machineId,\n\t\t\t'udtPath': self.view.params.udtPath,\n\t\t\t'database': self.view.params.database,\n\t\t\t'title': self.view.params.machineTitle,\n\t\t},\n\t}, scope='page')\n\tsystem.perspective.closePopup('metricSelector')\n"
+                    "script": "\toptions = self.parent.parent.getChild('Options').props.instances\n\tself.session.custom.metricPatch = {\n\t\t'machineTitle': self.view.params.machineTitle,\n\t\t'selectedKeys': metrics.service.selected_keys(options),\n\t\t'context': {\n\t\t\t'machineId': self.view.params.machineId,\n\t\t\t'udtPath': self.view.params.udtPath,\n\t\t\t'database': self.view.params.database,\n\t\t\t'title': self.view.params.machineTitle,\n\t\t},\n\t}\n\ttry:\n\t\tnonce = int(self.session.custom.metricNonce)\n\texcept:\n\t\tnonce = 0\n\tself.session.custom.metricNonce = nonce + 1\n\tsystem.perspective.closePopup('metricSelector')\n"
                   }
                 }
               }

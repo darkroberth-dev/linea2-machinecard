@@ -1,7 +1,9 @@
 {
   "custom": {
     "darkMode": true,
-    "menuOpen": false
+    "menuOpen": false,
+    "metricNonce": 0,
+    "metricPatch": {}
   },
   "propConfig": {
     "custom.menuOpen": {
@@ -54,6 +56,14 @@
     },
     "props.lastActivity": {
       "access": "SYSTEM",
+      "persistent": false
+    },
+    "custom.metricNonce": {
+      "access": "PUBLIC",
+      "persistent": false
+    },
+    "custom.metricPatch": {
+      "access": "PUBLIC",
       "persistent": false
     }
   },
