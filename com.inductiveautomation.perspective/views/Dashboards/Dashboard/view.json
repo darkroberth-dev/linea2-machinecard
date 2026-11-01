@@ -2971,6 +2971,19 @@
     "type": "ia.container.flex",
     "custom": {
       "metricNonce": 0
+    },
+    "scripts": {
+      "customMethods": null,
+      "extensionFunctions": null,
+      "messageHandlers": [
+        {
+          "messageType": "metricApply",
+          "script": "\tcontext = {\n\t\t'machineId': payload['machineId'],\n\t\t'udtPath': payload['udtPath'],\n\t\t'database': payload['database'],\n\t\t'title': payload['machineTitle'],\n\t}\n\tcards = self.getChild('Main').getChild('FlexContainer').getChild('FlexContainer_0').getChild('Cards')\n\tmetrics.service.patch_repeater(cards, payload['machineTitle'], payload['selectedKeys'], context)\n",
+          "sessionScope": false,
+          "pageScope": true,
+          "viewScope": false
+        }
+      ]
     }
   }
 }

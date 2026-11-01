@@ -188,7 +188,7 @@
                   "type": "script",
                   "scope": "G",
                   "config": {
-                    "script": "\tself.session.custom.metricPatch = {\n\t\t'machineTitle': self.view.params.machineTitle,\n\t\t'selectedKeys': list(self.session.custom.metricDraftKeys or []),\n\t\t'context': {\n\t\t\t'machineId': self.view.params.machineId,\n\t\t\t'udtPath': self.view.params.udtPath,\n\t\t\t'database': self.view.params.database,\n\t\t\t'title': self.view.params.machineTitle,\n\t\t},\n\t}\n\ttry:\n\t\tnonce = int(self.session.custom.metricNonce)\n\texcept:\n\t\tnonce = 0\n\tself.session.custom.metricNonce = nonce + 1\n\tsystem.perspective.closePopup('metricSelector')\n"
+                    "script": "\tkeys = []\n\ttry:\n\t\tfor item in list(self.session.custom.metricDraftKeys or []):\n\t\t\tkeys.append(str(item))\n\texcept:\n\t\tkeys = []\n\tsystem.perspective.sendMessage('metricApply', {\n\t\t'machineTitle': self.view.params.machineTitle,\n\t\t'selectedKeys': keys,\n\t\t'machineId': self.view.params.machineId,\n\t\t'udtPath': self.view.params.udtPath,\n\t\t'database': self.view.params.database,\n\t}, scope='page')\n\tsystem.perspective.closePopup('metricSelector')\n"
                   }
                 }
               }
