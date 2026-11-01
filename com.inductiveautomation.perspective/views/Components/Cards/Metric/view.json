@@ -1,0 +1,471 @@
+{
+  "custom": {},
+  "params": {
+    "iconPathLeft": "",
+    "iconPathRigth": "material/trending_up",
+    "percent": 28,
+    "text": "Disponibilidad",
+    "type": 0
+  },
+  "propConfig": {
+    "params.iconPathLeft": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.iconPathRigth": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.percent": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.text": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.type": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 100,
+      "width": 119
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "SimpleGauge"
+                },
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0px"
+                },
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "path": "view.params.percent"
+                      },
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "animate": true,
+                  "arc": {
+                    "width": "16%"
+                  },
+                  "label": {
+                    "size": "18px",
+                    "units": "pz/min"
+                  },
+                  "style": {
+                    "classes": [],
+                    "height": "100%",
+                    "width": "100%"
+                  }
+                },
+                "type": "ia.chart.simple-gauge"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "grow": 1,
+              "shrink": 1,
+              "basis": "0px"
+            },
+            "props": {
+              "alignContent": "center",
+              "alignItems": "center",
+              "direction": "column",
+              "justify": "center",
+              "style": {},
+              "wrap": "wrap"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Mc0"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "path": "view.params.text"
+                      },
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "alignVertical": "top",
+                  "style": {
+                    "color": "#6d7782",
+                    "fontSize": "11px",
+                    "fontWeight": "600",
+                    "textAlign": "center",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "20px",
+              "shrink": 0
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "Gauge"
+        },
+        "position": {
+          "grow": 1
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "path": "view.params.type"
+              },
+              "transforms": [
+                {
+                  "code": "\tif value == 1:\n\t\treturn True\n\telse:\n\t\treturn False",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "direction": "column"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Icon"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#5c6b7a\")"
+                          },
+                          "type": "expr"
+                        }
+                      },
+                      "props.path": {
+                        "binding": {
+                          "config": {
+                            "bidirectional": true,
+                            "path": "view.params.iconPathLeft"
+                          },
+                          "type": "property"
+                        }
+                      },
+                      "props.style.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#5c6b7a\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "",
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "position.display": {
+                    "binding": {
+                      "config": {
+                        "path": "./Icon.props.path"
+                      },
+                      "transforms": [
+                        {
+                          "code": "\tif value != \"\":\n\t\treturn True\n\telse:\n\t\treturn False",
+                          "type": "script"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "marginRight": 5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Mv0"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "propConfig": {
+                      "props.style.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#f2f4f7\", \"#1b2430\")"
+                          },
+                          "type": "expr"
+                        }
+                      },
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "bidirectional": true,
+                            "path": "view.params.percent"
+                          },
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "18px",
+                        "fontWeight": "700",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "",
+                  "shrink": 0
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Icon"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#5c6b7a\")"
+                          },
+                          "type": "expr"
+                        }
+                      },
+                      "props.path": {
+                        "binding": {
+                          "config": {
+                            "bidirectional": true,
+                            "path": "view.params.iconPathRigth"
+                          },
+                          "type": "property"
+                        }
+                      },
+                      "props.style.color": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#5c6b7a\")"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_1"
+                },
+                "position": {
+                  "basis": "",
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "position.display": {
+                    "binding": {
+                      "config": {
+                        "path": "./Icon.props.path"
+                      },
+                      "transforms": [
+                        {
+                          "code": "\tif value != \"\":\n\t\treturn True\n\telse:\n\t\treturn False",
+                          "type": "script"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "marginLeft": 5
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_1"
+            },
+            "position": {
+              "basis": "50%",
+              "shrink": 0
+            },
+            "props": {
+              "justify": "center"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Mc0"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "path": "view.params.text"
+                      },
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "alignVertical": "top",
+                  "style": {
+                    "color": "#6d7782",
+                    "fontSize": "11px",
+                    "fontWeight": "600",
+                    "marginTop": 5,
+                    "textAlign": "center",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_2"
+            },
+            "position": {
+              "basis": "50%",
+              "shrink": 0
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "Card"
+        },
+        "position": {
+          "grow": 1
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "path": "view.params.type"
+              },
+              "transforms": [
+                {
+                  "code": "\tif value == 0:\n\t\treturn True\n\telse:\n\t\treturn False",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "direction": "column"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "events": {
+      "dom": {
+        "onClick": {
+          "config": {
+            "script": "\tpopup.notification.info(str(self.view.params.text), str(self.view.params.percent), \"info\")\n"
+          },
+          "scope": "G",
+          "type": "script"
+        }
+      }
+    },
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "lift"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

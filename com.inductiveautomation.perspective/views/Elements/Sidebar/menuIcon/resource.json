@@ -1,0 +1,17 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "thumbnail.png",
+    "view.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Roberto",
+      "timestamp": "2026-10-31T14:39:26Z"
+    },
+    "lastModificationSignature": "ab03421dc6b19ee071cb4a893da11e4a5d0e4c5ac6cb2575b2e746445fa4a5fb"
+  }
+}

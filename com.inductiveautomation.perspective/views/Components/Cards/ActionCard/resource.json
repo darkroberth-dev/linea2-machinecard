@@ -1,0 +1,18 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "thumbnail.png",
+    "view.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Roberto",
+      "timestamp": "2026-10-31T15:16:29Z"
+    },
+    "lastModificationSignature": "0e6b4593077f871909fdc39fa06798b65439080375991bd8c6e7b60fc39cdb2b",
+    "documentation": "Chip de Anotar Paradas, operador, producto o defectos."
+  }
+}

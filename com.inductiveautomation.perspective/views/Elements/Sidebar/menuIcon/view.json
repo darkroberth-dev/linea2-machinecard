@@ -1,0 +1,105 @@
+{
+  "custom": {},
+  "params": {
+    "iconPath": "ignition/dashboard",
+    "navigatePath": ""
+  },
+  "propConfig": {
+    "params.iconPath": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.navigatePath": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 70,
+      "width": 70
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.session.custom.menuOpen \u003d False\n\tpath \u003d self.view.params.navigatePath\n\tif path:\n\t\tsystem.perspective.navigate(path)\n"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Icon"
+            },
+            "propConfig": {
+              "props.color": {
+                "binding": {
+                  "config": {
+                    "expression": "if({session.custom.darkMode}, \"#d5dbe3\", \"#3c4650\")"
+                  },
+                  "type": "expr"
+                }
+              },
+              "props.path": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "path": "view.params.iconPath"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "classes": "dashboard/menuIcon lift",
+                "height": "24px",
+                "width": "24px"
+              }
+            },
+            "type": "ia.display.icon"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "48px",
+          "shrink": 0
+        },
+        "props": {
+          "alignItems": "center",
+          "direction": "column",
+          "justify": "center",
+          "style": {
+            "height": "48px",
+            "overflow": "visible",
+            "width": "48px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "alignItems": "center",
+      "direction": "column",
+      "justify": "center",
+      "style": {
+        "height": "48px",
+        "width": "64px"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}
