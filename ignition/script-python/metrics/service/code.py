@@ -1,7 +1,3 @@
-
-_REPEATER = ("root", "Main", "FlexContainer", "FlexContainer_0", "Cards")
-
-
 def catalog():
 	return metrics.catalog.default_catalog()
 
@@ -10,25 +6,39 @@ def options():
 	return catalog().options()
 
 
-def keys_from_labels(labels):
-	found = []
-	for label in labels or []:
-		key = metrics.catalog.LABEL_TO_KEY.get(label)
-		if key and key not in found:
-			found.append(key)
-	return found
-
-
 def normalize_selection(selected_keys):
-	known = catalog().keys()
 	allowed = {}
-	for key in known:
+	for key in catalog().keys():
 		allowed[key] = True
 	clean = []
 	for key in list(selected_keys or []):
 		if allowed.get(key) and key not in clean:
 			clean.append(key)
 	return clean
+
+
+def selection_rows(selected_keys):
+	chosen = {}
+	for key in normalize_selection(selected_keys):
+		chosen[key] = True
+	rows = []
+	for row in options():
+		item = dict(row)
+		item["selected"] = True if chosen.get(item.get("key")) else False
+		rows.append(item)
+	return rows
+
+
+def selected_keys(rows):
+	keys = []
+	for row in rows or []:
+		if row.get("selected"):
+			keys.append(row.get("key"))
+	return normalize_selection(keys)
+
+
+def _clone(value):
+	return system.util.jsonDecode(system.util.jsonEncode(value))
 
 
 def _previous_by_key(metric_rows):
@@ -40,83 +50,58 @@ def _previous_by_key(metric_rows):
 	return previous
 
 
-def resolve(selected_keys, context, previous=None):
+def build(selected_keys, context, previous=None):
 	machine = context if hasattr(context, "get") else metrics.context.MachineContext.from_map(context)
 	return catalog().resolve(normalize_selection(selected_keys), machine, previous)
 
 
-def open_selector(component):
-	params = component.view.params
-	selected = list(params.selectedKeys or [])
-	system.perspective.openPopup(
-		"metricSelector",
-		"Popups/MetricSelector",
-		params={
-			"machineTitle": params.machineTitle,
-			"udtPath": params.udtPath,
-			"machineId": params.machineId,
-			"database": params.database,
-			"selectedKeys": selected,
-		},
-		title="Metricas",
-		modal=True,
-		overlayDismiss=True,
-		showCloseIcon=True,
-		resizable=False,
-		position={"width": 440, "height": 560},
-	)
-
-
-def _cards(page):
-	node = page
-	for name in _REPEATER:
-		node = node.getChild(name)
-	return node
-
-
-def apply_selection(page, machine_title, selected_keys, context):
+def patch_instances(instances, machine_title, selected_keys, context):
 	selected = normalize_selection(selected_keys)
-	repeater = _cards(page)
 	rows = []
-	built = []
-	for row in list(repeater.props.instances):
-		data = dict(row)
-		if data.get("title") == machine_title:
-			machine = metrics.context.MachineContext.from_map({
-				"machineId": context.get("machineId", data.get("machineId", "")),
-				"udtPath": context.get("udtPath", data.get("udtPath", "")),
-				"database": context.get("database", data.get("database", "")),
-				"title": machine_title,
-			})
-			built = resolve(selected, machine, _previous_by_key(data.get("metrics")))
-			data["selectedKeys"] = selected
-			data["metrics"] = built
-			data["udtPath"] = machine.udt_path
-			data["machineId"] = machine.machine_id
-			data["database"] = machine.database
-			actions = []
-			for action in list(data.get("actions") or []):
-				item = dict(action)
-				if item.get("role") == "select-metrics":
-					item["selectedKeys"] = selected
-					item["udtPath"] = machine.udt_path
-					item["machineId"] = machine.machine_id
-					item["database"] = machine.database
-				actions.append(item)
-			data["actions"] = actions
+	for raw in list(instances or []):
+		data = _clone(raw)
+		if data.get("title") != machine_title:
+			rows.append(data)
+			continue
+		machine = metrics.context.MachineContext.from_map({
+			"machineId": context.get("machineId", data.get("machineId", "")),
+			"udtPath": context.get("udtPath", data.get("udtPath", "")),
+			"database": context.get("database", data.get("database", "")),
+			"title": machine_title,
+		})
+		data["selectedKeys"] = selected
+		data["metrics"] = build(selected, machine, _previous_by_key(data.get("metrics")))
+		data["udtPath"] = machine.udt_path
+		data["machineId"] = machine.machine_id
+		data["database"] = machine.database
+		actions = []
+		for action in list(data.get("actions") or []):
+			item = dict(action)
+			if item.get("role") == "select-metrics":
+				item["selectedKeys"] = selected
+				item["udtPath"] = machine.udt_path
+				item["machineId"] = machine.machine_id
+				item["database"] = machine.database
+			actions.append(item)
+		data["actions"] = actions
 		rows.append(data)
-	repeater.props.instances = rows
-	return built
+	return rows
 
 
-def refresh(page):
-	repeater = _cards(page)
+def patch_repeater(repeater, machine_title, selected_keys, context):
+	repeater.props.instances = patch_instances(repeater.props.instances, machine_title, selected_keys, context)
+
+
+def refresh_instances(instances):
 	rows = []
-	for row in list(repeater.props.instances):
-		data = dict(row)
+	for raw in list(instances or []):
+		data = _clone(raw)
 		selected = data.get("selectedKeys")
 		if selected:
-			machine = metrics.context.MachineContext.from_map(data)
-			data["metrics"] = resolve(selected, machine, _previous_by_key(data.get("metrics")))
+			data["metrics"] = build(selected, metrics.context.MachineContext.from_map(data), _previous_by_key(data.get("metrics")))
 		rows.append(data)
-	repeater.props.instances = rows
+	return rows
+
+
+def refresh_repeater(repeater):
+	repeater.props.instances = refresh_instances(repeater.props.instances)

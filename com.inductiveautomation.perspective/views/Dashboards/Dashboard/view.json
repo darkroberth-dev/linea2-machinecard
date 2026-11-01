@@ -2956,6 +2956,18 @@
         "padding": "0px"
       }
     },
-    "type": "ia.container.flex"
+    "type": "ia.container.flex",
+    "events": {
+      "message": {
+        "metricApply": {
+          "type": "script",
+          "scope": "page",
+          "config": {
+            "messageType": "metricApply",
+            "script": "\tcards = self.getChild('Main').getChild('FlexContainer').getChild('FlexContainer_0').getChild('Cards')\n\tmetrics.service.patch_repeater(cards, payload.get('machineTitle'), payload.get('selectedKeys'), payload.get('context') or {})\n"
+          }
+        }
+      }
+    }
   }
 }

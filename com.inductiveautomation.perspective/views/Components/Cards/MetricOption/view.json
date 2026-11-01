@@ -7,121 +7,63 @@
     "source": "udt"
   },
   "propConfig": {
-    "params.key": {
-      "paramDirection": "input",
-      "persistent": true
-    },
-    "params.label": {
-      "paramDirection": "input",
-      "persistent": true
-    },
-    "params.selected": {
-      "paramDirection": "inout",
-      "persistent": true
-    },
-    "params.source": {
-      "paramDirection": "input",
-      "persistent": true
-    }
+    "params.key": {"paramDirection": "input", "persistent": true},
+    "params.label": {"paramDirection": "input", "persistent": true},
+    "params.selected": {"paramDirection": "inout", "persistent": true},
+    "params.source": {"paramDirection": "input", "persistent": true}
   },
-  "props": {
-    "defaultSize": {
-      "height": 36,
-      "width": 400
-    }
-  },
+  "props": {"defaultSize": {"height": 40, "width": 400}},
   "root": {
-    "meta": {
-      "name": "root"
-    },
+    "meta": {"name": "root"},
     "type": "ia.container.flex",
-    "props": {
-      "alignItems": "center",
-      "style": {
-        "width": "100%"
-      }
-    },
+    "props": {"alignItems": "center", "style": {"height": "40px", "width": "100%"}},
     "children": [
       {
-        "meta": {
-          "name": "Check"
-        },
+        "meta": {"name": "Check"},
         "type": "ia.input.checkbox",
-        "position": {
-          "basis": "28px",
-          "shrink": 0
-        },
+        "position": {"grow": 1, "basis": "0px"},
         "propConfig": {
           "props.selected": {
             "binding": {
               "type": "property",
-              "config": {
-                "bidirectional": true,
-                "path": "view.params.selected"
-              }
+              "config": {"bidirectional": true, "path": "view.params.selected"}
             }
-          }
-        },
-        "props": {
-          "selected": false
-        }
-      },
-      {
-        "meta": {
-          "name": "Label"
-        },
-        "type": "ia.display.label",
-        "position": {
-          "grow": 1,
-          "basis": "0px"
-        },
-        "propConfig": {
+          },
           "props.text": {
-            "binding": {
-              "type": "property",
-              "config": {
-                "path": "view.params.label"
-              }
-            }
+            "binding": {"type": "property", "config": {"path": "view.params.label"}}
           }
         },
         "props": {
+          "selected": false,
           "text": "Metrica",
-          "style": {
-            "fontSize": "14px",
-            "marginLeft": "8px"
+          "style": {"fontSize": "14px", "width": "100%"}
+        },
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "type": "script",
+              "scope": "G",
+              "config": {
+                "script": "\tsystem.perspective.sendMessage(\"metricToggle\", {\"key\": self.view.params.key, \"selected\": bool(self.props.selected)}, scope=\"page\")\n"
+              }
+            }
           }
         }
       },
       {
-        "meta": {
-          "name": "Kind"
-        },
+        "meta": {"name": "Kind"},
         "type": "ia.display.label",
+        "position": {"basis": "48px", "shrink": 0},
         "propConfig": {
           "props.text": {
             "binding": {
               "type": "property",
-              "config": {
-                "path": "view.params.source"
-              },
-              "transforms": [
-                {
-                  "type": "script",
-                  "code": "\treturn 'UDT' if str(value) == 'udt' else 'DB'\n"
-                }
-              ]
+              "config": {"path": "view.params.source"},
+              "transforms": [{"type": "script", "code": "\treturn 'UDT' if str(value) == 'udt' else 'DB'\n"}]
             }
           }
         },
-        "props": {
-          "text": "UDT",
-          "style": {
-            "color": "#6d7782",
-            "fontSize": "11px",
-            "fontWeight": "700"
-          }
-        }
+        "props": {"text": "UDT", "style": {"color": "#6d7782", "fontSize": "11px", "fontWeight": "700"}}
       }
     ]
   }

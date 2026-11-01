@@ -1,11 +1,10 @@
 {
-  "custom": {
-    "options": []
-  },
+  "custom": {},
   "params": {
     "database": "",
     "machineId": "",
     "machineTitle": "",
+    "options": [],
     "selectedKeys": [],
     "udtPath": ""
   },
@@ -20,6 +19,10 @@
     },
     "params.machineTitle": {
       "paramDirection": "input",
+      "persistent": true
+    },
+    "params.options": {
+      "paramDirection": "inout",
       "persistent": true
     },
     "params.selectedKeys": {
@@ -45,18 +48,20 @@
     "props": {
       "direction": "column",
       "style": {
+        "backgroundColor": "#ffffff",
         "height": "100%",
         "padding": "16px",
         "width": "100%"
       }
     },
     "events": {
-      "system": {
-        "onStartup": {
+      "message": {
+        "metricToggle": {
           "type": "script",
-          "scope": "G",
+          "scope": "page",
           "config": {
-            "script": "\tselected = set(self.view.params.selectedKeys or [])\n\trows = []\n\tfor row in metrics.service.options():\n\t\titem = dict(row)\n\t\titem['selected'] = item.get('key') in selected\n\t\trows.append(item)\n\tself.view.custom.options = rows\n"
+            "messageType": "metricToggle",
+            "script": "\tself.view.params.options = metrics.ui.toggle(self.view.params.options, payload.get('key'), payload.get('selected'))\n"
           }
         }
       }
@@ -70,6 +75,7 @@
         "props": {
           "text": "Metricas visibles",
           "style": {
+            "color": "#1b2430",
             "fontSize": "18px",
             "fontWeight": "700"
           }
@@ -80,9 +86,6 @@
           "name": "Hint"
         },
         "type": "ia.display.label",
-        "position": {
-          "shrink": 0
-        },
         "propConfig": {
           "props.text": {
             "binding": {
@@ -98,7 +101,7 @@
           "style": {
             "color": "#6d7782",
             "fontSize": "13px",
-            "marginBottom": "12px",
+            "marginBottom": "8px",
             "marginTop": "4px"
           }
         }
@@ -117,7 +120,8 @@
             "binding": {
               "type": "property",
               "config": {
-                "path": "view.custom.options"
+                "bidirectional": true,
+                "path": "view.params.options"
               }
             }
           }
@@ -125,12 +129,16 @@
         "props": {
           "path": "Components/Cards/MetricOption",
           "direction": "column",
+          "alignItems": "stretch",
           "useDefaultViewHeight": false,
           "useDefaultViewWidth": false,
           "elementPosition": {
-            "basis": "36px",
+            "basis": "40px",
             "grow": 0,
             "shrink": 0
+          },
+          "elementStyle": {
+            "width": "100%"
           },
           "style": {
             "overflow": "auto",
@@ -193,7 +201,7 @@
                   "type": "script",
                   "scope": "G",
                   "config": {
-                    "script": "\tselected = []\n\tfor row in self.parent.getChild('Options').props.instances:\n\t\tif row.get('selected'):\n\t\t\tselected.append(row.get('key'))\n\tcontext = {\n\t\t'machineId': self.view.params.machineId,\n\t\t'udtPath': self.view.params.udtPath,\n\t\t'database': self.view.params.database,\n\t\t'title': self.view.params.machineTitle,\n\t}\n\tmetrics.service.apply_selection(self.page, self.view.params.machineTitle, selected, context)\n\tsystem.perspective.closePopup('metricSelector')\n"
+                    "script": "\tsystem.perspective.sendMessage('metricApply', {\n\t\t'machineTitle': self.view.params.machineTitle,\n\t\t'selectedKeys': metrics.service.selected_keys(self.view.params.options),\n\t\t'context': {\n\t\t\t'machineId': self.view.params.machineId,\n\t\t\t'udtPath': self.view.params.udtPath,\n\t\t\t'database': self.view.params.database,\n\t\t\t'title': self.view.params.machineTitle,\n\t\t},\n\t}, scope='page')\n\tsystem.perspective.closePopup('metricSelector')\n"
                   }
                 }
               }

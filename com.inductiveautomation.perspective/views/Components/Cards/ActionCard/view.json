@@ -202,7 +202,7 @@
       "dom": {
         "onClick": {
           "config": {
-            "script": "\trole = str(self.view.params.role or '')\n\tif role == 'select-metrics':\n\t\tmetrics.service.open_selector(self)\n\telse:\n\t\tpopup.notification.info('Accion', str(self.view.params.label), 'info')\n"
+            "script": "\trole = str(self.view.params.role or '')\n\tif role == 'select-metrics':\n\t\tmetrics.ui.open_selector(self)\n\telse:\n\t\tpopup.notification.info('Accion', str(self.view.params.label), 'info')\n"
           },
           "scope": "G",
           "type": "script"
